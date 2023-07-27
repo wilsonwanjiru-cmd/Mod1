@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body, * {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body * {
+            margin: 1em;
+            padding: 0;
+            list-style: none;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        header nav li {
+            margin: 0 1rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        main h2 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav li {
+                margin: 0.5rem 0;
+            }
+
+            main h2 {
+                font-size: 1.2rem;
+            }
+        }
+        main p {
+            cursor: pointer;
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body class="light-theme">
+
+   <!-- Your header content -->
+   <header>
+    <h1>Accessibility</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="database.html">Database</a></li>
+            <!-- Add more navigation links if needed -->
+        </ul>
+    </nav>
+</header>
+
+<!-- Your main content for the Accessibility page -->
+<main>
+    <h2>Web Accessibility</h2>
+    <p>
+        Web accessibility is the inclusive practice of ensuring that websites and web applications can be used by people with disabilities. It involves designing and developing web content in a way that allows everyone, regardless of their abilities or disabilities, to perceive, understand, navigate, and interact with the web.
+    </p>
+
+    <h2>Why Web Accessibility Matters</h2>
+    <p>
+        Web accessibility is essential because it ensures that everyone, including people with disabilities, can access and use the information and services provided on the web. It is not only a legal and ethical requirement but also an opportunity to create a better and more inclusive web for all users.
+    </p>
+
+    <h2>Web Accessibility Guidelines</h2>
+    <p>
+        There are various guidelines and standards that developers and designers can follow to make their websites accessible. Some of the widely recognized accessibility guidelines include the Web Content Accessibility Guidelines (WCAG) published by the Web Accessibility Initiative (WAI) of the World Wide Web Consortium (W3C).
+    </p>
+
+    <h2>Testing for Accessibility</h2>
+    <p>
+        It is crucial to test websites for accessibility to identify and fix any barriers that may prevent people with disabilities from accessing and using the content effectively. There are various tools and testing methodologies available to help ensure a website's accessibility compliance.
+    </p>
+
+    <!-- Add more content related to accessibility if needed -->
+</main>
+
+<!-- Your footer content -->
+<footer>
+    <p>&copy; 2023 Wilson Wanjiru. All rights reserved.</p>
+</footer>
+<a href="index.html">Go back to home</a>
+<script>
+    const init = () => {
+        /* ... (Previous JavaScript code here) ... */
+
+        // Event listeners for additional events
+        const scrollParagraph = document.querySelector('main p:first-child');
+        const inputField = document.querySelector('input');
+
+        scrollParagraph.addEventListener('mouseover', () => {
+            scrollParagraph.style.color = 'red';
+        });
+
+        scrollParagraph.addEventListener('mouseleave', () => {
+            scrollParagraph.style.color = '#007bff';
+        });
+
+        inputField.addEventListener('focus', () => {
+            inputField.style.backgroundColor = '#f0f0f0';
+        });
+
+        inputField.addEventListener('blur', () => {
+            inputField.style.backgroundColor = '#fff';
+        });
+
+        inputField.addEventListener('change', (event) => {
+            alert(`The input value has changed to: ${event.target.value}`);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+</script>
+    
+
+</body>
+</html>
+
