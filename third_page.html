@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Add this CSS to style the link */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+
+/* Optional: Add more styles as needed */
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+        }
+        .featurephone {
+            background-color: #f0f0f0;
+        }
+        .webperf {
+            background-color: #e0e0e0;
+        }
+        .nbu {
+            background-color: #d0d0d0;
+        }
+        .emergingmarkets {
+            background-color: #c0c0c0;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .phone-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            .section {
+                padding: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .content-image {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .content-image {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media query for small screens */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            /* Adjust styles for small screens here */
+            body {
+                padding: 10px;
+            }
+        }
+
+     /* Style the code block container */
+.code-container {
+    background-color: black; /* Set the background color of the code block container */
+    padding: 10px; /* Add some padding */
+    border: 1px solid white; /* Add a white border */
+    display: block; /* Display the code container as a block */
+    max-width: 100%; /* Set the maximum width to 100% */
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+
+/* Style the code element */
+.code-container code {
+    white-space: nowrap; /* Prevent line breaks */
+    display: block; /* Display the code block as a block */
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style the <link> element */
+.code-container .tag {
+    color: red; /* Set the text color of the <link> element to red */
+}
+
+/* Style the attributes */
+.code-container .attribute {
+    color: cyan; /* Set the text color of the attributes to cyan */
+}
+
+/* Style the attribute values */
+.code-container .value {
+    color: yellow; /* Set the text color of the attribute values to yellow */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    /* Adjust styles for small screens here */
+    .code-container {
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            font-size: 16px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p, ul, li {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            ul {
+                margin-left: 10px; /* Adjust the left margin for lists on small screens */
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%; /* Ensure images do not exceed their container width */
+            height: auto; /* Maintain aspect ratio for images */
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+
+       /* Original styles for large screens */
+.codes-container {
+    background-color: black;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+    line-height: 1.4;
+}
+
+.codes-container code {
+    white-space: pre-wrap;
+    color: #333;
+    max-width: 100%; /* Limit the width of the code block to the container width */
+    overflow-x: auto; /* Add horizontal scrolling when necessary */
+    word-break: break-all; /* Allow long words to break and wrap */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .codes-container {
+        padding: 5px; /* Reduce padding for small screens */
+        font-size: 14px; /* Decrease font size for better readability on small screens */
+    }
+}
+
+body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+       
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+
+                body {
+            font-family: Arial, sans-serif;
+            padding: 10px; /* Reduce padding for small screens */
+            max-width: 100%; /* Adjust the maximum width for responsiveness */
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px; /* Increase font size for small screens */
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 10px; /* Reduce margin for small screens */
+            font-size: 16px; /* Increase font size for small screens */
+        }
+
+        pre {
+            background-color: black;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 10px; /* Add some padding for small screens */
+        }
+
+        img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .content {
+            margin: 10px; /* Add some margin for small screens */
+            font-size: 16px; /* Increase font size for small screens */
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            .content {
+                font-size: 14px; /* Decrease font size for smaller screens */
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 10px; /* Add some padding for small screens */
+        }
+
+        h1 {
+            font-size: 24px; /* Increase font size for headings on small screens */
+        }
+
+        p {
+            font-size: 16px; /* Increase font size for paragraphs on small screens */
+            line-height: 1.5;
+            margin-bottom: 10px; /* Reduce margin for small screens */
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        ul {
+            font-size: 16px; /* Increase font size for lists on small screens */
+            list-style-type: disc;
+            padding-left: 20px; /* Add padding to lists on small screens */
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px; /* Decrease font size for headings on smaller screens */
+            }
+
+            p {
+                font-size: 14px; /* Decrease font size for paragraphs on smaller screens */
+                margin-bottom: 5px; /* Reduce margin for smaller screens */
+            }
+
+            ul {
+                font-size: 14px; /* Decrease font size for lists on smaller screens */
+            }
+        }
+                /* Add your CSS styles here */
+                body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            background-color: black;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            font-size: 14px;
+            color: whitesmoke;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px; /* Decrease font size for headings on smaller screens */
+            }
+
+            p {
+                font-size: 14px; /* Decrease font size for paragraphs on smaller screens */
+                margin-bottom: 10px; /* Reduce margin for smaller screens */
+            }
+
+            pre {
+                font-size: 12px; /* Decrease font size for code blocks on smaller screens */
+                padding: 5px;
+            }
+
+            code {
+                font-size: 12px; /* Decrease font size for code text on smaller screens */
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        pre {
+            background-color: black;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            font-size: 14px;
+            color: white;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px; /* Decrease font size for headings on smaller screens */
+            }
+
+            p {
+                font-size: 14px; /* Decrease font size for paragraphs on smaller screens */
+                margin-bottom: 10px; /* Reduce margin for smaller screens */
+            }
+
+            pre {
+                font-size: 12px; /* Decrease font size for code blocks on smaller screens */
+                padding: 5px;
+            }
+
+            code {
+                font-size: 12px; /* Decrease font size for code text on smaller screens */
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px; /* Decrease font size for headings on smaller screens */
+            }
+
+            p {
+                font-size: 14px; /* Decrease font size for paragraphs on smaller screens */
+                margin-bottom: 10px; /* Reduce margin for smaller screens */
+            }
+        }
+ 
+
+   
+        
+
+        
+        
+
+     
+
+        
+       
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html" class="h3 link-button">
+        Go Back Home
+    </a>
+    
+    <div class="section featurephone">
+        <h2>Feature Phones</h2>
+        <p>Highlight phones are affordable (under $20-25), low-end devices enabling millions of users in rural countries to use the web. They can be thought of as a smaller version of a smart phone.</p>
+    </div>
+
+    <div class="section webperf">
+        <h2>Web Performance</h2>
+        <p>Tip: Building a quick, center starting point for your site gives everybody a decent encounter; whether they're on a minimal expense include telephone or the most recent top of the line PDA.</p>
+    </div>
+
+    <div class="section nbu">
+        <h2>New Business Unit (NBU)</h2>
+        <p>Here goes the content related to the New Business Unit.</p>
+    </div>
+
+    <div class="section emergingmarkets">
+        <h2>Emerging Markets</h2>
+        <p>Content about emerging markets and their significance.</p>
+    </div>
+
+    <div class="section center">
+        <img class="phone-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--qg-KGKn---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/2vdv9miod3cjx78cgawa.png" alt="Phone Image">
+    </div>
+    <p>These gadgets can't deal with rich JavaScript and media encounters as well as very good quality advanced cells so extraordinary consideration should be taken with payloads you send down.</p>
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--VQ6Gpd4c--/c_limit,f_auto,fl_progressive,q_auto,w_880/https://thepracticaldev.s3.amazonaws.com/i/fgot72vc5qk21zr886ve.png" alt="Geekbench Benchmarks">
+        <p>Above, we can see Geekbench computer processor execution benchmarks for the most elevated selling PDAs around the world in 2019. We can likewise see (highlighted) the exhibition of a famous element telephone - the Nokia 3110. JavaScript is CPU-bound and places an emphasis on single-core performance (remember that it is inherently more single-threaded than the rest of the Web Platform). This implies remembering gadget attributes when it means a lot to ponder emerging nations.</p>
+    </div>
+    <p>This post endeavors to address these trouble spots so we can fabricate destinations that are usable by everybody, paying little heed to how quick their gadget is.</p>
+    <h2>Foundation</h2>
+    <p>You might recollect that component telephones were famous until the mid 2000s, before the appearance of advanced cells. Little in size with a key-cushion rather than a touchscreen, they had pretty essential highlights e.g calling, messaging and basic message centered web perusing. After the appearance of advanced cells, these telephones turned out to be less predominant in evolved nations.</p>
+    <p>In non-industrial nations, not every person can bear the cost of a PDA and a limitless information anticipate a 4G organization. This market has been caught by brilliant element telephones which join the equipment and cost of a fundamental telephone with a portion of the usefulness found in shrewd phones.</p>
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Rmo4ZMqk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/f959syqj3hpmgva8nitb.jpg" alt="Smart Feature Phone">
+    </div>
+    <p>The shrewd component telephone market has developed extensively beginning around 2017 and it is normal that 400 million component telephones will be sold universally in 2019.</p>
+    <p>The development of component telephones has been controlled by Nokia's restoration of its old top picks like the 3110 and 8110 (which Paul Kinlan has a helpful troubleshooting guide for). In India, Dependence Jio highlight telephones give a modest, yet present day choice for getting to the web in a hurry. Jio have moved the development of KaiOS - a Linux-based working framework for highlight telephones.</p>
+    <p>This expansion of the feature phone market necessitated websites that operate effectively, but there are some limitations we ought to probably be aware of.</p>
+
+    <h2>Feature Phone Considerations</h2>
+    <p>Above are Google Pictures Light and Facebook mBasic, which both burden rapidly on highlight telephones, with insignificant dependence on client-side content. Despite the fact that Proxx is a game, it loads quickly thanks to aggressive code splitting.</p>
+    <h3>Include Telephone Limitations</h3>
+    <p>Clients in non-industrial nations are confined by 3 variables:</p>
+    <ul>
+        <li>Barely any minimal expense, excellent gadgets</li>
+        <li>Inaccessibility of top notch organizations</li>
+        <li>Reasonable portable information</li>
+    </ul>
+    <p>Remember these requirements while taking on an element telephone mentality:</p>
+    <ul>
+        <li><strong>Hardware:</strong> Highlight telephones generally run on a sluggish (1.1 GHz) single or double center central processor and under 512 MB Slam. For a better understanding of the implications of this restriction, compare this to an iPhone XS equipped with 4 GB of RAM and a Hexa-core CPU.</li>
+        <li><strong>Data:</strong> Information plans are getting less expensive, yet are still vigorously covered in locales where component telephones will be famous. Keep away from enormous organization payloads however much as could reasonably be expected to guarantee your pages load quick and aren't exorbitant clients cash.</li>
+        <li><strong>Screen size is limited:</strong> The screen size of a component telephone is regularly a lot more modest than that of a PDA. It's in the scope of 2.4" and can oblige just a predetermined number of cooperations. Consider zeroing in on stacking assets required for in-viewport content as speedy as could be expected.</li>
+        <li><strong>No Touch:</strong> Without a trace of touch, each capability, activity button or connection on the screen should be effectively open from the keypad. You would rather not make an excessive number of alternate routes.</li>
+        <li><strong>Keypads:</strong> Keypads on highlight telephones are nothing similar to the QWERTY consoles we are utilized to. They have around 15 buttons where a similar button should be squeezed more than once for certain characters. Thus, UX ought to limit the requirement for composing.</li>
+    </ul>
+    <p>Even in Japan, restricted information plans can affect client experience on the web:</p>
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--26teMJjY--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pbs.twimg.com/media/EJWfWGnVUAA6jnz.jpg" alt="Data Plan Impact">
+    </div>
+
+    <h2>Advancement Rules</h2>
+    <p>The accompanying tips can assist with conveying a quick encounter for sites on highlight telephones. By and large, don't make the client hang tight for anything they didn't request. Where conceivable, keep JavaScript download and execution times low.</p>
+    <h3>Set Execution Budgets</h3>
+    <p>Each byte of your page goes through many bottlenecks en route. These incorporate sluggish/flaky organizations, slow computer chips and the main ensured method for further developing execution is set spending plans and do less.</p>
+    <p>Execution spending plans are a settled upon drawn of lines your group follow to guarantee great execution. They are limitations for measurements that you commit not to surpass. Characterizing a financial plan for quantifiable measurements before improvement begins guarantees groups stay inside these guidelines as new elements are created.</p>
+    <p>Instances of asset measurements that can be planned could be JavaScript group size, picture bytes or number of HTTP demands. Client timing spending plans could be set for client experience measurements like First Contentful Paint, Biggest Contentful Paint or First Information Deferral. Limits can be characterized for every one of these measurements in view of the main interest group.</p>
+    <p>Financial plans can be set for introductory application rationale, vendor/hall packages, etc. Financial plan can be implemented in a form cycle, through Beacon (LightWallet) and in consistent joining.</p>
+    <h4>PRPL-30 - a JavaScript Budget for Feature Phones</h4>
+    <p>The Chrome group has suggested the PRPL design for granularly serving code to rapidly get applications intelligent on low-end gadgets on a sluggish organization. PRPL empowers preloading the littlest measure of content to get a page valuable then use lethargic stacking and (alternatively) Administration Laborers to precache these groups for future routes.</p>
+    <p>PRPL-50 took this thought further by setting a 50KB financial plan for your underlying assets. As component telephones are much more computer processor compelled, we really want to draw a significantly more tight line on our JavaScript. I could propose a PRPL-30 (30KB gzipped + minified starting pack) if focusing on a component telephone.</p>
+
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZLY01fL5--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/vsobe85mjrdokvaixcm7.png" alt="Server and Timing">
+    </div>
+    <p>Under these settings, the primary byte from a decent edge-reserving server after SSL discussion will ordinarily associate with 2s. This passes on us with 3 seconds to get the underlying course's payload downloaded, delivered, and prepared for client input on the screen. This indicates that your page or route's minified and gzipped initial bundle size should be less than 30 KB for JavaScript-centric experiences.</p>
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--5AdWAjF9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/dh016epxpehjk0t8quh5.png" alt="Image 2">
+    </div>
+    <p>Under these settings, the primary byte from a decent edge-reserving server after SSL discussion will ordinarily associate with 2s. This passes on us with 3 seconds to get the underlying course's payload downloaded, delivered, and prepared for client input on the screen. This indicates that your page or route's minified and gzipped initial bundle size should be less than 30 KB for JavaScript-centric experiences.</p>
+    <p>tl;dr On the off chance that you would be able, select static delivering or server delivering with as negligible dependence on script as could be expected. In the event that client-side or mixture delivering is an unquestionable requirement, just send script a course needs, in as not many full circle trips as could really be expected. Take into account strategies like progressive rehydration.</p>
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--WDsbohbE--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/6wb9uvk8frdanwc0e3r4.png" alt="JavaScript Bottleneck">
+    </div>
+    <p>JS is the #1 bottleneck on include telephones</p>
+    <p>While building intuitive encounters for include telephones, know that JavaScript is logical your greatest bottleneck. This is significant as how you decide to deliver your pages can postpone how soon clients can really utilize them, even with a D-Cushion. Make sure that your interactive payloads are as small as possible whether you choose to render your pages using a server or static method.</p>
+    <p>JavaScript has two major drawbacks: time between download and execution. A sluggish organization (e.g successful association of 3G) can postpone how rapidly JavaScript moves past the wire while a sluggish central processor implies it can take more time for contents to execute.</p>
+    <p>Underneath we can picture the distinctions in computer processor handling speeds for a famous JavaScript-weighty site - notice it can require 6x attempts longer for a low-end gadget contrasted with a top of the line one:</p>
+    <div>
+        <img class="content-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--mVj1EQpa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/450mh64w6jjbtydz9a2a.png" alt="Central Processor Comparison">
+    </div>
+    <p>If a page depends heavily on large JS bundles for rendering or interactivity, this can mean users waiting anywhere between 30-60s before they can actually use your UI on a feature phone. Therefore, developers need to use JavaScript sparingly and load only the JavaScript for routes and components that users may require at the appropriate times to reduce download and processing times.</p>
+    
+    <h3>Keep interactive payloads lean</h3>
+    <ul>
+        <li>Load courses, components, and resources lazily if possible, especially if they are offscreen or not critical for above-the-fold content.</li>
+        <li>Use code splitting to divide JavaScript so that you only serve what users need on the initial route. This results in faster page load times as the amount of content to be downloaded and executed is reduced.</li>
+        <li>Remove unused code from JavaScript bundles to keep them as slim as possible. This may require reviewing your bundle and identifying libraries that are not being used at all or are unnecessary and can be replaced with custom solutions. Libraries that are not needed during the initial load can also be lazily loaded.</li>
+        <li>Consider differential loading so that optimized JS will be served to modern browsers, avoiding over-transpilation and expensive polyfilling. Reducing the amount of legacy code delivered to modern browsers can help improve page load performance.</li>
+        <li>If JS is critical for rendering and initializing the initial UX, preload those scripts. The browser is informed that the script is necessary and should be retrieved as soon as possible by preloading it in the manner described below.</li>
+    </ul>
+    <div class="code-container">
+        <code>
+            <span class="tag">&lt;link</span> 
+            <span class="attribute">rel</span>=<span class="value">"preload"</span>
+            <span class="attribute">as</span>=<span class="value">"script"</span>
+            <span class="attribute">href</span>=<span class="value">"critical.js"</span><span class="tag">&gt;</span>
+        </code>
+    </div>
+    <h1>Pick Your Stack Wisely</h1>
+    <p>Third-party libraries can speed up development and make complex tasks easier to accomplish, but they can also be heavy and should be used with caution when developing for feature phones.</p>
+    <p>The accompanying direction can serve to integrate outer conditions ideally:</p>
+    <ul>
+        <li>As component telephones are very asset obliged, keep away from or limit utilizing a JavaScript structure if conceivable - everything revolves around giving yourself however much headroom as could be expected for your application rationale.</li>
+        <li>In a circumstance where JavaScript use ought to be restricted to keep the page small and performant, a JavaScript framework would add a great deal of overhead.</li>
+        <li>In the case of working with Respond, consider restricting use to server-delivering or exchange it for Preact and Preact compat at build time to shave around 30KB off your bundle.</li>
+        <li>Smooth, lit-html, and vanilla JavaScript are great choices for light packages.</li>
+        <li>Keep outsider conditions as small as conceivable to guarantee that the size of starting page bundles is within budget. See tools like <a href="https://bundlephobia.com/" target="_blank" rel="noopener noreferrer">bundlephobia.com</a> which highlight library costs well.</li>
+        <li>Second look just in case your packs to guarantee you're utilizing lean libraries (For example date-fns or luxon rather than Moment.js and its enormous regional defaults).</li>
+        <li>Be very cautious while using Revival and inline Revival stores for managing application state. The revival state often inlined in HTML to "hydrate" a page can often bloat up the size of your responses.</li>
+    </ul>
+    <p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wFOWSw2H--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/r8jj58e7t5rrnk2p8i0o.png" alt="Image Source"></p>
+
+    <h1>Adjust to Avoid Heavy Assets on Slow Connections</h1>
+    <p>Tip: You might be keen on <a href="https://example.com/mobile-loading" target="_blank" rel="noopener noreferrer">mobile loading</a> - further developing web execution on low-end gadgets for more on this theme.</p>
+    <p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--Y0Wkn1dm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/28y3swalphaqgulruopb.png" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Y0Wkn1dm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/28y3swalphaqgulruopb.png" alt="Mobile Stacking"></a></p>
+    <p>Mobile Stacking is a procedure which "adjusts" resources being served to a user in view of their dynamic association type (ECT) - accessible to supported browsers through the Network Information API. Websites can use adaptive serving to guarantee that users with slow connections will receive "a" version of the experience—albeit one with lower fidelity.</p>
+    <div class="codes-container">
+        <code>
+            <span>// JavaScript code to log the effective connection type</span><br>
+            console.log(navigator.connection.effectiveType); <span>// 3G</span>
+        </code>
+    </div>
+    <h1>Adaptive Serving Content</h1>
+    
+    <p>Note: Indeed, even on "quick" 4G, a client can encounter slow organization speeds as you might have encountered on café or gathering WiFi.</p>
+
+    <p>A product item component is a concrete application of adaptive serving. A client on a sluggish association may just be served a packed variant of the item picture, while a client on a quicker association might load an excellent picture and upgrades requiring more JavaScript - like the capacity to zoom into the item picture or view a merry go round of various item picture points of view.</p>
+
+    <p>With highlight telephones, a sluggish association may not really be the greatest impediment. Slow central processor and low memory are bound to influence the client's experience in any event, when they are on a respectable 4G association. Despite the fact that we don't yet approach computer processor revealing, Client Clues give approximates to Gadget Memory, Viewport-width, Gadget Pixel Proportion, network data, and different signs which could be utilized to create a more granular serving procedure.</p>
+    <h1>Be Respectful of Users' Data Plans with the Save-Data Header</h1>
+    
+    <p>Chrome for Android has a feature called Light Mode (Data Saver), allowing data-conscious users to opt-in to the browser automatically optimizing resources to improve how quickly pages load. Optimizations include more heavily compressing images, deferring non-critical resources, or serving cached versions of the page.</p>
+
+    <p>When users enable a data-saving mode (like Light Mode) in supported browsers, it will add the Save-Data request header to all HTTP and HTTPS requests. To provide users with an optimal experience when Lite Mode is activated, application developers can check to see if this hint is enabled in JavaScript (for example, conditionally turning off heavy features). The following snippet of code can be used to check for this:</p>
+
+    <pre>
+        <code>
+if (navigator.connection.saveData === true) {
+    // Data-saving mode is enabled, adjust your application accordingly
+    // For example, disable high-bandwidth features
+}
+        </code>
+    </pre>
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--08W0EvR8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/m3er37u2u29lbflnh4kn.png" alt="Image Description">
+    
+    <div class="content">
+        <p>Note: Despite the fact that your element telephone might uphold Chrome, this doesn't ensure that Light Mode (Data Saver) is accessible. It is ideal to regard accessibility of this component as speculative.</p>
+    </div>
+    <h1>Offload Exorbitant Application Logic and State Handling to Web Workers</h1>
+
+    <p><em>Tip: Do read <a href="https://web.dev/load-faster-like-proxx/">Strategies to make a web application load fast, even on a feature phone by Surma</a>. It's amazing.</em></p>
+
+    <p>The main thread of the browser is responsible for running JavaScript in addition to laying out pages, painting pixels on the screen, and tracking user interactions. Long-running, complex JavaScript, could wind up obstructing these different tasks.</p>
+
+    <p>Web Workers allow JavaScript code to run in the "background" without hindering the main thread. They should be used to keep the main thread free from excessive JavaScript such as complex application logic or state management services. The main thread and the worker thread communicate using the <code>postMessage()</code> method and <code>onmessage</code> event handler. The <code>postMessage()</code> method allows the sender to send a single parameter, which can be any value or object. Libraries like Comlink can make it easier to use workers in your apps.</p>
+
+    <p>Surma's case study with and without worker threads for Proxx is an excellent read - it was observed that without worker threads, the application was frozen for 6.6 seconds on a Nokia 2 (1GB RAM/1.3 GHz quad-core processor). With worker threads, however, the response time was 48ms for the same operation/event. Therefore, if you have CPU-intensive logic, it's worth considering whether moving this to a worker thread is beneficial for your use case.</p>
+
+    <h1>Optimize Images</h1>
+
+    <p>Images typically make use of a lot of data. They also take time to render, especially on lower-end devices, which is a good reason it's important to ensure images are correctly sized and compressed when being delivered to a feature phone.</p>
+
+    <ul>
+        <li>Compress images using a tool like Imagemin to generate smaller-sized images without a noticeable impact on quality.</li>
+        <li>Replace animated GIFs with videos, which load much faster. However, consider the necessity of heavy media on low-end devices.</li>
+        <li>Lazily load images if possible, but ensure the JavaScript required for this is lightweight. The new native loading attribute can help here.</li>
+        <li>Serve responsive images with correct aspect ratios by creating multiple versions of images and serving the most suitable one for the user's viewport.</li>
+        <li>Serve images with the right dimensions for the screen. Loading low-fidelity, low-resolution images on low-end devices can ensure that images are decoded faster.</li>
+    </ul>
+    <h1>Identifying the Screen Size</h1>
+
+    <p>Many modern smart feature phones have a screen size of QVGA, or 320 x 240 pixels horizontally and 240 x 240 pixels vertically. In the event that you want to recognize screen size on page load (e.g., to flip specific elements on/off or utilize versatile stacking), you could utilize a bit like the accompanying:</p>
+
+    <pre><code>
+        <span>// JavaScript code to detect screen size</span>
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
+        if (screenWidth === 320 && (screenHeight === 240 || screenHeight === 320)) {
+            // Your code for QVGA screen size goes here
+            console.log("This device has a QVGA screen.");
+        } else {
+            // Your code for other screen sizes goes here
+            console.log("This device has a different screen size.");
+        }
+    </code></pre>
+    <h1>Emulating Feature Phones in Chrome DevTools</h1>
+
+    <p>Chrome DevTools can emulate a feature phone. If you're building for a feature phone, you should buy a cheap phone for real-world testing.</p>
+
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s---dDX9L00--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pbs.twimg.com/media/D6aGb2ZX4AEC7Op.jpg" alt="Emulating Feature Phones in Chrome DevTools">
+
+    <p>In the event that you might want to copy an element telephone (e.g., a Dependence Jio KaiOS gadget) in Chrome DevTools, this is how it's done:</p>
+
+    <ol>
+        <li>Open Chrome DevTools.</li>
+        <li>Toggle the Device Toolbar Device dropdown.</li>
+        <li>Select Edit...</li>
+        <li>Add a new device with the following details:</li>
+    </ol>
+
+    <pre><code>
+Name: KaiOS (or customize on a case-by-case basis)
+Width: 240
+Height: 320
+User-Agent: Mozilla/5.0 (Mobile; LYF/F90M/LYF-F90M-000-02-23-181217; Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5 YouTube/1.66.51.J
+    </code></pre>
+
+    <p>Save your changes.</p>
+
+    <p>(Alternatively) Redo central processor choking depending on the situation, but note that this can never be as exact as testing on a genuine gadget.</p>
+    <h1>Delivering a Great User Experience</h1>
+
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--gnOQ8J_8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/pcyv85vgo4x0bps4wqsa.png" alt="User Experience">
+
+    <p>It's feasible to convey a great encounter to all clients, paying little heed to where they are. This requires additional consideration as not all versatile equipment is equivalent.</p>
+
+    <p>The more reasonable a telephone handset is, the higher the opportunity it might contain a sluggish computer processor. Consider how you're presenting your experience because JavaScript performance is influenced by download and execution times.</p>
+
+    <p>While this matters for advanced cells, it makes a difference considerably something else for include telephones.</p>
+
+
+
+
+ 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+    
+    
+
+
+</html>
+

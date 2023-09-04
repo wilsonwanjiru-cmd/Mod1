@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+                /* Add this CSS to style the link */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+                body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Adjust spacing for small screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        body {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        address {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+                /* Add responsive styles here */
+                footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        footer h2 {
+            font-size: 24px;
+        }
+        
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        footer ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        footer p {
+            font-size: 14px;
+        }
+        
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            footer {
+                text-align: center;
+            }
+            
+            footer h2 {
+                font-size: 20px;
+            }
+            
+            footer ul li {
+                font-size: 14px;
+            }
+            
+            footer p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="h3 link-button">
+        Go Back Home
+    </a>
+    <h1>30 Web Accessibility Tips</h1>
+    
+    <p>These web accessibility tips can be utilized by website specialists, engineers, or content creators to direct them in making or sending online assets that are completely available to all clients. This rundown isn't planned to supplant or guide to formal norms, for example, the Internet Consortium's (W3C's) Internet Content Openness Rules. Do you have any suggestions for how to improve this list? Kindly send your plans to <a href="mailto:accesscomp@uw.edu">accesscomp@uw.edu</a>.</p>
+
+    <h2>1. Add appropriate alt text to pictures.</h2>
+    <p>Use alt text to give people who can't see the images, like people who use screen readers or Braille output devices, access to the content. Alt text is upheld by most report designs, including HTML, Microsoft Word, and Adobe PDF. For more data, see the UW Available Innovation page <a href="https://www.washington.edu/accesstech/checklist/images/">Making Pictures Open</a>.</p>
+
+    <h2>2. Use headings effectively.</h2>
+    <p>Use headings and subheadings to shape a diagram of the page. Try not to skip heading levels. They help non-visual clients (counting web indexes) to comprehend how the page is coordinated, and make it simple for screen peruser clients to explore. For more data, see the UW Available Innovation page <a href="https://https//www.washington.edu/accessibility/documents/">Giving Design in Pages and Records</a>.</p>
+
+    <h2>3. Make accessible PDFs.</h2>
+    <p>The only type of PDF that supports headings and alt text for images is the "tagged PDF." Utilize the PDF Availability Checker that is given by Adobe Acrobat. Visit the UW Accessible Technology page <a href="https://https//www.washington.edu/accessibility/documents/">Creating Accessible Documents</a> for additional details.</p>
+
+    <h2>4. Know when to utilize PDF.</h2>
+    <p>PDFs jam a report's appearance across working frameworks and gadgets. In the event that this trademark isn't fundamental, consider utilizing another arrangement, for example, HTML, which is significantly more available.</p>
+
+    <h2>5. Use ARIA landmarks.</h2>
+    <p>The W3C Open Rich Web Applications (ARIA) particular makes it conceivable to deliver available intelligent web applications. One simple section into ARIA is milestone jobs. Users will be able to jump directly to that section of the page with just one keystroke if they simply add an HTML attribute for one of the eight landmark roles (for instance, role="navigation" or role="main"). On the other hand, use HTML semantic components that guide to ARIA jobs. For more data, see the UW Available Innovation page <a href="https://www.washington.edu/accesstech/documents/">Giving Design in Pages and Records</a>.</p>
+
+    <h2>6. Add names to form fields.</h2>
+    <p>Utilize the HTML name component so screen peruser users will realize which labels or prompts are related with which structure fields. For more data, see the UW Open Innovation page <a href="https://www.washington.edu/accesstech/checklist/forms/">Making Available Structures</a>.</p>
+    <p>PDF symbol: <a href="your-pdf-file-link.pdf">30_Web_Tips_2023</a></p>
+
+    <h2>7. Combine fields on the form that are related.</h2>
+    <p>In HTML, wrap groups of checkboxes or radio buttons in a fieldset element, and wrap the question or prompt that applies to them all in a legend element. For more data, see the UW Open Innovation page <a href="https://www.washington.edu/accesstech/checklist/forms/">Making Available Structures</a>.</p>
+
+    <h2>8. Markup tables appropriately.</h2>
+    <p>Use HTML markup properly to convey relationships among column and row headers and the data cells within their scope. For more data, see the WebAIM article <a href="https://webaim.org/techniques/tables/">Making Accessible Tables</a>.</p>
+
+    <h2>9. Identify language of text.</h2>
+    <p>Since some screen readers are multi-lingual, use markup to identify the default language of a document and of any text that deviates from the default. For more data, see the UW Open Innovation page <a href="https://www.washington.edu/accesstech/checklist/language/">Recognizing Language of a Document and its Parts</a>.</p>
+
+    <h2>10. Provide sufficient color contrast.</h2>
+    <p>Ensure foreground and background have enough contrast. There are many free tools that can assist with this. For more data, see the UW Open Innovation page <a href="https://www.washington.edu/accesstech/checklist/contrast/">Providing Adequate Color Contrast</a>.</p>
+
+    <h2>11. Do not use small fonts.</h2>
+    <p>Since users may be unaware they can increase text size using browser hotkeys, use a reasonably large text size by default; then, users can make it smaller if desired. Note that a text size of 1em equals the default browser text size, therefore is an optimal choice for most text, thus respecting users' preferences and expectations.</p>
+
+    <h2>12. Respect white space.</h2>
+    <p>Provide plenty of space between lines and blocks of text. This makes text generally easier to read and makes it easier for many users to track text horizontally.</p>
+
+    <h2>13. Provide clear indication of focus.</h2>
+    <p>In CSS, use :hover to make the page respond to user's mouse movements. For individuals who aren't using a mouse, provide the same functionality using :focus. For more data, see the UW Open Innovation page <a href="https://www.washington.edu/accesstech/checklist/focus/">Giving Apparent Focus to Keyboard Users</a>.</p>
+
+    <h2>14. Use text, not images of text.</h2>
+    <p>Use text instead of images of text, and control its appearance using CSS. Images of text become blurry when enlarged, take longer to download, and are inefficient for the site creator to edit.</p>
+    <h2>15.Mull over the words you pick.</h2>
+    <p>Keep your content easy to read and understand. Often, web creators use bigger words and longer sentences than are really needed.</p>
+
+    <h2>16. Inscribe video.</h2>
+    <p>Subtitles provide benefits to all users. There are some free, easy-to-use tools available that assist in the most common way of transcribing and subtitling videos. For more information, see the <a href="https://www.washington.edu/accesstech/videos/">UW Open Innovation page on Making Accessible Videos</a>.</p>
+
+    <h2>17. Describe video.</h2>
+    <p>For individuals who can't see video, create a text that includes brief descriptions of significant visual content, then provide that as a separate description track, either as timed text or recorded narration. This format is known as audio description. For more information, see the <a href="https://www.washington.edu/accesstech/videos/">UW Open Innovation page on Making Accessible Videos</a>, especially the section on Audio Description.</p>
+
+    <h2>18.Provide a transcript.</h2>
+    <p>Provide a transcript for video and audio so people who are deaf-blind and those with low internet bandwidth can access the content. Transcripts benefit all users by allowing them to quickly access content.</p>
+
+    <h2>19. Choose media players that support accessibility.</h2>
+    <p>When selecting a media player, ask questions like: Does this player support closed captions? Does it support description? Can it be operated without a mouse? Are buttons and controls accessible to screen reader users? Accessible Player is a free player created with accessibility in mind by the University of Washington, with assistance from the open-source community.</p>
+
+    <h2>20. Use a website navigation menu that works for all users.</h2>
+    <p>When creating a navigation menu, ask questions like: Could this menu ever be operated by keyboard alone? If it could, is doing so efficient or does it require dozens or hundreds of keystrokes? Consult reputable resources, such as the WAI-ARIA Authoring Practices for accessible design patterns and examples on how to properly code navigation menus.</p>
+
+    <h2>21. Develop accessible JavaScript widgets.</h2>
+    <p>An accessible widget uses ARIA to interact with assistive technology (AT), can be operated solely with the keyboard, and gracefully degrades for users who do not have the latest AT. Consult the WAI-ARIA Authoring Practices for accessible design patterns and examples on how to properly code a wide variety of common widgets.</p>
+
+    <h2>22.Use accessible JavaScript widgets.</h2>
+    <p>If choosing to use an existing widget instead of creating your own, conduct a reasonable level of testing. Accessibility-related information can be found in the bug reports and documentation. Test widgets using keyboard alone, or using AT, and ask users with disabilities to test them.</p>
+
+    <h2>23.Learn how your Content Management System (CMS) and Learning Management System (LMS) support content accessibility.</h2>
+    <p>Most LMSs and CMSs provide some level of support for accessibility. Understand the accessibility features of the tools you're using. If there are accessibility deficiencies, understand the workarounds. Know which themes, plugins, and modules are accessible, and recommend or require those over inaccessible options.</p>
+
+    <h2>24.Test web pages using a keyboard.</h2>
+    <p>Take the #nomouse challenge! Try navigating the web page and controlling all of its elements using the tab key on a keyboard; Avoid the mouse. This simple test is often a good indicator of accessibility. For more information, see <a href="https://nomouse.org">nomouse.org</a>.</p>
+
+    <h2>25. Use high-contrast color schemes on test pages.</h2>
+    <p>All major operating systems and some web browsers have high contrast color schemes available. Ensure that all essential page content remains visible when these are enabled.</p>
+
+    <h2>26.Utilize assistive technology to test the pages.</h2>
+    <p>There are free screen readers and other assistive technologies available that can be used for testing. You don't need to become an expert user, but simple tests with assistive technology can provide valuable insights into whether certain features on a page could present accessibility issues. For more information, see the WebAIM article <a href="https://webaim.org/articles/screenreader_testing/">Testing with Screen Readers</a>, as well as their series of quick guides on testing with specific screen readers.</p>
+    <h2>27. Test pages on cell phones.</h2>
+    <p>Increasing numbers of users, including users with disabilities, are accessing the web using phones, tablets, and other mobile devices. Test your website using mobile devices, and while doing so, be sure to check for accessibility.</p>
+
+    <h2>28. Ask vendors specific questions about the accessibility of their products.</h2>
+    <p>When procuring products from third-party vendors, we rely on those vendors to provide products that work for all users. Always inquire about the accessibility of products, even for minor purchases. For major products, consider adopting a more formal process for addressing accessibility. For more information, see the <a href="https://www.washington.edu/accesstech/policy-resources/procurement/">UW Accessible Technology page on Securing Accessible IT</a>.</p>
+
+    <h2>29.Make accessibility a priority!</h2>
+    <p>If a product is not accessible, avoid acquiring it, using it, or endorsing it. Work to implement policies on your campus that require IT purchases to be accessible. If it is necessary to use an inaccessible product because it is the only option, communicate to the vendor that you expect to purchase an accessible alternative when it becomes available.</p>
+
+    <h2>30.Reach out!</h2>
+    <p>There are numerous communities of practice that are collaborating to make the web (and world) more accessible. For example, consider getting involved with the Access Technology Higher Education Network (ATHEN) or EDUCAUSE IT Accessibility Community. Together, we can make a difference.</p>
+    <h1>About AccessComputing</h1>
+
+    <p>The Paul G. Allen School of Software Engineering and Designing and DO-IT (Disabilities, Opportunities, Internetworking, and Technology) at the University of Washington lead AccessComputing, a project that aims to increase the participation of people with disabilities in computing careers nationwide.</p>
+
+    <p>For additional information, to be added to the mailing list, request materials in an alternative format, or to provide comments or suggestions about DO-IT publications or web pages, contact:</p>
+
+    <address>
+        University of Washington<br>
+        Box 354842<br>
+        Seattle, WA 98195-4842<br>
+        <a href="mailto:accesscomp@uw.edu">accesscomp@uw.edu</a><br>
+        <a href="http://www.uw.edu/accesscomputing/">www.uw.edu/accesscomputing/</a><br>
+        206-685-DOIT (3648) (voice/TTY)<br>
+        888-972-DOIT (3648) (toll-free voice/TTY)<br>
+        509-328-9331 (voice/TTY) Spokane
+    </address>
+
+    <h2>Leaders</h2>
+    <ul>
+        <li>University of Washington</li>
+        <ul>
+            <li>Dr. Richard Ladner</li>
+            <li>Dr. Sheryl Burgstahler</li>
+            <li>Dr. Amy J. Ko</li>
+            <li>Dr. Brianna Blaser</li>
+        </ul>
+        <li>Gallaudet University</li>
+        <ul>
+            <li>Dr. Raja Kushalnagar</li>
+        </ul>
+        <li>Tufts University</li>
+        <ul>
+            <li>Dr. Elaine Schaertl Short</li>
+        </ul>
+        <li>University of California, Irvine</li>
+        <ul>
+            <li>Dr. Stacy Branham</li>
+        </ul>
+    </ul>
+
+    <h2>Affiliation</h2>
+    <p>AccessComputing is supported by the National Science Foundation under Award #CNS-0540615, CNS-0837508, CNS-1042260, and CNS-1539179. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.</p>
+
+    <p>Copyright © 2020, University of Washington. Permission is granted to copy these materials for educational, noncommercial purposes provided the source is acknowledged.</p>
+    <footer>
+        <h2>Related Ventures</h2>
+        <ul>
+            <li>AccessADVANCE</li>
+            <li>AccessCSforAll</li>
+            <li>AccessCollege</li>
+            <li>AccessCyberlearning</li>
+            <li>AccessEngineering</li>
+            <li>AccessISL</li>
+            <li>AccessSTEM</li>
+            <li>DO-IT</li>
+        </ul>
+        <p>&copy; 2006-2023 University of Washington (UW). These materials are provided under a Creative Commons BY-NC-SA 3.0 License and in accordance with UW's privacy policy and terms of use. The AccessComputing project is funded by the National Science Foundation (grant #CNS-0540615, CNS-0837508, CNS-1042260, CNS-1539179, CNS-2137312). The author's opinions, findings, and recommendations are his or her own and do not necessarily represent the views of the federal government.</p>
+    </footer>
+</body>
+</html>
+

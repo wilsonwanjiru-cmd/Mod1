@@ -11,171 +11,424 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body, * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: aliceblue;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 28px;
             text-align: center;
-            font-family: 'Inter', sans-serif;
         }
 
-        body * {
-            margin: 1em;
-            padding: 0;
-            list-style: none;
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
 
-        header h1 {
-            font-size: 2rem;
+                        /* Add this CSS to style the link */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+
+        h1 {
+            font-size: 28px;
         }
 
-        header nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            margin-top: 1rem;
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
-        header nav li {
-            margin: 0 1rem;
+        iframe {
+            max-width: 100%;
+            height: auto;
         }
 
-        header nav a {
-            color: #fff;
-            text-decoration: none;
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
         }
 
-        main {
-            padding: 1rem;
+        h2 {
+            font-size: 24px;
         }
 
-        main h2 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
+        h3 {
+            font-size: 20px;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+                margin: 10px;
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+            footer {
+            background-color: lightblue; /* Light blue background color for the footer */
+            padding: 10px; /* Add some padding to the footer */
+            text-align: center; /* Center-align text in the footer */
         }
 
         footer p {
-            font-size: 0.8rem;
+            margin: 5px 0; /* Add some spacing between paragraphs in the footer */
         }
 
-        /* Responsive styles */
-        @media screen and (max-width: 768px) {
-            header {
-                padding: 0.5rem;
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            footer {
+                background-color: lightgreen /* Light blue background color for the footer on small screens */
+                padding: 5px; /* Reduce padding on small screens */
             }
-
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            header nav ul {
-                flex-direction: column;
-            }
-
-            header nav li {
-                margin: 0.5rem 0;
-            }
-
-            main h2 {
-                font-size: 1.2rem;
-            }
-        }
-        main p {
-            cursor: pointer;
-            color: #007bff;
         }
     </style>
 </head>
+<body>
+    <div>
+        <a href="index.html" class="h3 link-button">
+        Go Back Home
+    </a>
+        </div>
+    <h1>What is Web Accessibility and How to Design for It?</h1>
 
-<body class="light-theme">
+    <p>Web accessibility assists individuals with disabilities in navigating a website and accessing its content more easily by using tools like a screen reader.</p>
 
-   <!-- Your header content -->
-   <header>
-    <h1>Accessibility</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="database.html">Database</a></li>
-            <!-- Add more navigation links if needed -->
-        </ul>
-    </nav>
-</header>
+    <p>By making your websites accessible, you will allow more people to interact with them, generating more traffic in the process positively.</p>
 
-<!-- Your main content for the Accessibility page -->
-<main>
-    <h2>Web Accessibility</h2>
-    <p>
-        Web accessibility is the inclusive practice of ensuring that websites and web applications can be used by people with disabilities. It involves designing and developing web content in a way that allows everyone, regardless of their abilities or disabilities, to perceive, understand, navigate, and interact with the web.
-    </p>
+    <p>Unfortunately, despite the World Health Organization's (WHO) estimate that 15% of the world's population has some form of disability, 70% of visited websites are severely disabled.</p>
 
-    <h2>Why Web Accessibility Matters</h2>
-    <p>
-        Web accessibility is essential because it ensures that everyone, including people with disabilities, can access and use the information and services provided on the web. It is not only a legal and ethical requirement but also an opportunity to create a better and more inclusive web for all users.
-    </p>
+    <p>You will learn more about web accessibility and its significance in this article. Besides, we will tell you how to make and test an accessible site in light of global standards.</p>
+    <h1>Web Accessibility - Video Tutorial</h1>
 
-    <h2>Web Accessibility Guidelines</h2>
-    <p>
-        There are various guidelines and standards that developers and designers can follow to make their websites accessible. Some of the widely recognized accessibility guidelines include the Web Content Accessibility Guidelines (WCAG) published by the Web Accessibility Initiative (WAI) of the World Wide Web Consortium (W3C).
-    </p>
+    <p>Learn how to improve your web accessibility and make your website user-friendly for everyone.</p>
 
-    <h2>Testing for Accessibility</h2>
-    <p>
-        It is crucial to test websites for accessibility to identify and fix any barriers that may prevent people with disabilities from accessing and using the content effectively. There are various tools and testing methodologies available to help ensure a website's accessibility compliance.
-    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rvm9eloOGaM?si=htKcI04Rfp6Cz0M9" title="Web Accessibility Video Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Site Advancement</h1>
+    <p>Creation</p>
+    <p>Jun 08, 2023</p>
+    <p>Sopha M.</p>
+    <p>9min Read</p>
 
-    <!-- Add more content related to accessibility if needed -->
-</main>
+    <h2>Web Openness - What It Is and How to Plan for It?</h2>
+    <p>Using tools like a screen reader, web accessibility makes it easier for people with disabilities to navigate a website and access its content.</p>
+    <p>By making your websites accessible, you will allow more people to interact positively with them and increase traffic.</p>
+    <p>Tragically, despite the fact that the World Wellbeing Association (WHO) gauges that 15% of the total populace lives with some type of handicap, 70% of checked sites have a serious absence of openness.</p>
+    <p>In this article, you will study web availability and why it is significant. Moreover, we will tell you the best way to make and test an open site in view of global guidelines.</p>
 
-<!-- Your footer content -->
-<footer>
-    <p>&copy; 2023 Wilson Wanjiru. All rights reserved.</p>
-</footer>
-<a href="index.html">Go back to home</a>
-<script>
-    const init = () => {
-        /* ... (Previous JavaScript code here) ... */
+    <h2>What Is Web Availability?</h2>
+    <h2>Web Availability - Video Instructional exercise</h2>
+    <p>Figure out how to further develop your web openness and make your site simple to use for everybody.</p>
 
-        // Event listeners for additional events
-        const scrollParagraph = document.querySelector('main p:first-child');
-        const inputField = document.querySelector('input');
+    <img src="image/youtube.png" alt="YouTube Channel Logo">
 
-        scrollParagraph.addEventListener('mouseover', () => {
-            scrollParagraph.style.color = 'red';
-        });
+    <p>Buy in FOR Additional Instructive Recordings!</p>
 
-        scrollParagraph.addEventListener('mouseleave', () => {
-            scrollParagraph.style.color = '#007bff';
-        });
+    <h2>Why It's Essential to Consider Availability in Website composition</h2>
+    <p>Web openness sets out the freedom for individuals with incapacities to encounter equivalent admittance to a computerized platform.</p>
+    <p>Besides, accessibility will accommodate a superior client experience, further developing your site's Website streamlining (Web optimization) endeavors. This will assist your site with positioning higher in web search tool results pages (SERPs), expanding crowd reach.</p>
+    <p>Accordingly, web availability assists organizations with extending their market reach and increment consumer loyalty and is one of the most incredible practices for website architecture.</p>
 
-        inputField.addEventListener('focus', () => {
-            inputField.style.backgroundColor = '#f0f0f0';
-        });
+    <h3>Before you begin making an open website architecture, how about we take a gander at the different scope of incapacities that influence admittance to your webpage and their separate availability arrangements:</h3>
+    <ul>
+        <li>Visual Disability - incorporates visual deficiency, low vision, and partial blindness. A great many people with these incapacities use screen amplifying programming or depend on screen perusers to peruse computerized text out loud and portray pictures on the web. Screen readers like JAWS and NVDA are two examples.</li>
+        <li>Hearing Weakness - alludes to different levels of hearing misfortune, from gentle to significant. The sound substance on the site ought to incorporate a record or captions to make it more obvious web content and connect with it.</li>
+        <li>Engine Weakness - individuals with restricted fine engine control might experience issues utilizing mice or trackpads. As a result, some users rely on keyboards. They could require modified gadgets, like a head pointer, discourse acknowledgment, or mouth sticks.</li>
+        <li>Cognitive Impairment—primarily, learning disabilities fall under this category. To assist clients with mental impediments interface, utilize reliable design and route, straightforward language, and make video content.</li>
+    </ul>
 
-        inputField.addEventListener('blur', () => {
-            inputField.style.backgroundColor = '#fff';
-        });
+    <p>Keep in mind that this applies to users with temporary disabilities as well as users with situational accessibility issues. For instance, if someone is in a crowded area, they might have trouble hearing.</p>
+    <p>In the event that you're making a site on WordPress, look at the prescribed procedures for WordPress openness.</p>
+    <h1>Web Accessibility Standards</h1>
 
-        inputField.addEventListener('change', (event) => {
-            alert(`The input value has changed to: ${event.target.value}`);
-        });
-    }
+    <p>To ensure that your content and web applications have good accessibility, focus on several aspects, including user agents as well as web and writing tools.</p>
 
-    document.addEventListener('DOMContentLoaded', init);
-</script>
-    
+    <h2>Legal Requirements for Website Accessibility</h2>
+    <p>The US has introduced the Americans with Disabilities Act (ADA) on accessibility. It ensures that all individuals should be able to use public resources, including websites. In short, it makes web accessibility a legal requirement.</p>
+    <p>Therefore, if you don't comply with it, you may face legal risks.</p>
+    <p>Non-compliance is not tolerated due to reasons such as ignorance or a website still being under web development. Hence, by creating an open and inclusive design, you can avoid the possibility of lawsuits and build a good reputation for the brand.</p>
 
+    <h2>Web Content Accessibility Guidelines (WCAG)</h2>
+    <p>The Web Content Accessibility Guidelines (WCAG) provide standardization of accessible content that can meet the needs of all individuals and organizations worldwide.</p>
+    <p>Essentially, these guidelines are for web developers, especially web writing tool developers, and anyone who wants to create accessible websites.</p>
+    <p>Many countries include the WCAG 2.0 as a reference for building accessible websites in their policies since it is recognized as an ISO standard.</p>
+    <p>Furthermore, the WCAG 3 is expected, which will support a wide range of user requirements, use holistic testing, and enable ongoing maintenance of guidelines and related content to adapt to changing technologies.</p>
+    <p>The success criteria in the WCAG guidelines consist of three levels of conformance:</p>
+    <ul>
+        <li>Level A - indicates that a website has a minimum level of accessibility, meaning not all users with disabilities can use it easily. If a website cannot reach this level, it is certain that it is not accessible.</li>
+        <li>Level AA - an appropriate standard for most websites, indicating that the common barriers have been removed.</li>
+        <li>Level AAA - the highest level in the WCAG. Some websites might not be able to comply with all of these requirements.</li>
+    </ul>
+
+    <h2>The accessibility requirements and standards are based on four principles. They are called POUR - an acronym from the following words:</h2>
+
+    <h3>Distinguishable</h3>
+    <p>It means that users should be able to perceive information from the web content. For example, if they have visual impairments, the content should be accessible with assistive technology (AT), like a screen reader.</p>
+
+    <h3>Operable</h3>
+    <p>Users should be able to operate all the user interface components and navigate them with various tools. For example, if users have difficulty using the mouse, they should be able to navigate the content using the tab key on their keyboards or voice commands.</p>
+
+    <h3>Understandable</h3>
+    <p>While creating web content, make it readable and predictable by using clear and simple instructions. Applying this principle will help users understand the site's workflow and avoid errors.</p>
+
+    <h3>Robust</h3>
+    <p>A variety of user agents, including mobile devices, web browsers, and AT, must be able to access robust content. In short, accessible sites cannot dictate how users should access the content.</p>
+    <h1>How to Test for Site Accessibility?</h1>
+
+    <p>Assessing your site when it is still in the improvement cycle to check whether it consents to the relevant guidelines is fundamental. Any issues can be distinguished before and settled all the more effectively through testing.</p>
+
+    <p>There are several testing tools to assist you with really taking a look at your site:</p>
+
+    <ul>
+        <li><strong>WAVE:</strong> WAVE is a popular and simple development tool. It distinguishes issues and provides a solution to fix them. It also furnishes accessibility information with error symbols and markers on the site page.</li>
+        <li><strong>WebAim:</strong> Use it to check your text and background colors to ensure that the part consents to the WCAG standards.</li>
+        <li><strong>NVACCESS:</strong> NVACCESS is a free screen reader for Windows. It has a core feature that assists developers in tracking focus objects on the screen. Also, developers can view the screen reader output as text by its speech viewer.</li>
+        <li><strong>Axe DevTools:</strong> This automated testing tool will identify and take care of accessibility issues while fostering your site. Intelligent Guided Testing (IGT) allows you to complete the manual test faster without being an expert.</li>
+    </ul>
+
+    <h2>Site Accessibility Checklist</h2>
+
+    <p>To further develop accessibility, check so that the following factors could check whether your site conforms to the WCAG guidelines.</p>
+
+    <h3>Alt Text for Images</h3>
+    <p>With screen readers, Alt Text can replace images, illustrations, or charts in web content with written information for blind users. In a nutshell, all users ought to have access to the same data regardless of whether they are able to view the images.</p>
+
+    <h3>Video and Audio Alternatives</h3>
+    <p>Giving media choices, for example, text records or depictions in audio files, will assist blind clients or individuals with hearing impedances access the data on the site. A good accessibility model would add subtitles or providing an audio description for a video.</p>
+
+    <h3>Keyboard Navigation</h3>
+    <p>Because not everyone is able to use a mouse, it is essential to ensure that all parts of the website can be accessed using a keyboard or the AT. Site structures, for example, search boxes and site maps ought to have coherent and natural route to assist users with effectively finding what they are searching for.</p>
+
+    <h3>Color Contrast</h3>
+    <p>It is simpler for clients with low vision to see your web content with high contrast variety present on the site. For instance, if you use a light background and a dark text color, visibility will improve. In any case, remember that each client has various abilities. Therefore, provide the option to change the variety mix of existing varieties in the internet browser. The minimum contrast required is somewhere around 4.5:1 for ordinary size text.</p>
+    <p><b>Open Structure</b></p>
+
+    <p>To assist a client with a handicap comprehend a web structure, ensure there is a label close to the field you believe they should tap on or type in, for instance, the structure's email address or name. Doing so will assist clients with AT figure out what to do in that field.</p>
+
+    <h2>Moving, Blazing, Squinting Substance</h2>
+    <p>Moving, blazing, squinting substance, for example, promotions, recordings, merry go rounds can make issues for clients with mental weaknesses.</p>
+    <p>What's more, ensure that your page has a period limit for quickly changing substance that can be changed or switched off, to not confound clients while handling data.</p>
+    <p>Note that content that squints beyond what three times each second can cause seizures for individuals with photosensitive problems.</p>
+
+    <h2>Text</h2>
+    <p>Because a screen reader will read the page title in addition to any content that is present, a descriptive page title can assist disabled users in navigating between various web pages. You ought to likewise markup headings to assist clients with exploring by depending on the console or AT.</p>
+    <p>Certain individuals need to expand letters or even change the textual style and line dividing while perusing. Hence, making your text zoomable without influencing the remainder of the substance will make your site more open.</p>
+    <h1>End</h1>
+
+    <p>Web accessibility improves your website's user experience. Many companies and organizations have implemented web accessibility practices due to various benefits, such as an expanded audience and higher rankings on SERPs (Search Engine Results Pages).</p>
+
+    <p>Additionally, web accessibility is also a legal requirement.</p>
+
+    <p>Aside from following the WCAG (Web Content Accessibility Guidelines) rules, it is essential to evaluate your website to avoid complex issues. Besides using assessment tools like WAVE and WebAim, you can manually check if your site is accessible.</p>
+
+    <p>To do so, consider the following factors:</p>
+
+    <ul>
+        <li><strong>Alt text</strong> - ensure that you have included alt text for your images.</li>
+        <li><strong>Video and audio alternatives</strong> - provide a text transcript or an audio description for videos.</li>
+        <li><strong>Navigation</strong> - ensure that your website has intuitive navigation.</li>
+        <li><strong>Color contrast</strong> - offer options to adjust colors or their combinations for users.</li>
+        <li><strong>Open structure</strong> - provide clear instructions for web forms and label each field.</li>
+        <li><strong>User-friendly content</strong> - avoid moving, flashing, blinking, and time-sensitive content.</li>
+        <li><strong>Text</strong> - provide text that can be zoomed in, use large page titles, and use proper markup for headings.</li>
+    </ul>
+
+    <p>Additionally, you can take online courses to learn more about web accessibility from platforms like EdX, Coursera, and Google. If you have further questions or thoughts, feel free to share them in the comments section below. Don't forget to choose the best web hosting services to ensure maximum website performance for your visitors.</p>
+    <footer>
+        <p>Email: <a href="mailto:wilsonmuita41@gmail.com">wilsonmuita41@gmail.com</a></p>
+        <p>Contact: <a href="tel:+25403538670">+25403538670</a></p>
+    </footer>
 </body>
 </html>
+
 

@@ -18,6 +18,20 @@
     margin: 0;
     padding: 0;
 }
+                /* Add this CSS to style the link */
+                .link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
 
 header {
     background-color: #333;
@@ -70,6 +84,11 @@ footer {
 </head>
 
 <body class="light-theme">
+    <div>
+        <a href="index.html" class="h3 link-button">
+            Go Back Home
+        </a>
+    </div>
     <header>
         <h1>Wilson Wanjru Web Performance Blog</h1>
         
@@ -104,7 +123,7 @@ footer {
 
     <footer>
         <p>&copy; 2023 Wilson Wanjiru. All rights reserved.</p>
-        <a href="index.html">Go back to home</a>
+        
     </footer>
 </body>
 </html>

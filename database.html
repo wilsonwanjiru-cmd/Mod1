@@ -12,96 +12,337 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
     <style>
-        body, * {
+               body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px;
+        }
+                        /* Add this CSS to style the link */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: aliceblue;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 28px;
             text-align: center;
         }
 
-        body * {
-            margin: 1em;
-            padding: 0;
-            list-style: none;
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
         }
 
-        section {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-around;
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
-        #movieDetails {
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
             display: block;
+            margin: 0 auto;
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            li {
+                font-size: 14px;
+            }
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            li {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+
+        
     </style>
 </head>
+<body>
+  <header>
+    <h1>Blog / Databases: What Are They?</h1>
+    <a href="index.html" class="h3 link-button">
+      Go Back Home
+  </a>
+</header>
 
-<body class="light-theme">
+<main>
+    <p><strong>What is an Information base?</strong></p>
 
-   <h1>Database</h1>
-   <h2>Movies Database</h2>
-  
-   <ul>
-     <li>
-       <h3>The Brave Little Toaster</h3>
-       <div>ID: 1</div>
-     </li>
-     <li>
-       <h3>The Princess Bride</h3>
-       <div>ID: 2</div>
-     </li>
-     <li>
-       <h3>Spirited Away</h3>
-       <div>ID: 3</div>
-     </li>
-   </ul>
- 
-   <section>
-     <form>
-       <label for="searchByID">Search By ID</label>
-       <input id="searchByID" type="text" placeholder="Enter ID here"/>
-       <input type="submit" />
-     </form>
-   </section>
-   <section id="movieDetails">
-     <h4>Title</h4>
-     <p>Summary</p>
-   </section>
-   <a href="index.html">Go back to home</a>
+    <p>Information bases have made considerable progress starting around 1960, when they were first conceptualized and made. All the more as of late, as a reaction to the coming of the Web and the requirement for speed and broad stockpiling, self-driving information bases and cloud data sets have begun kicking off something new. Be that as it may, what is a data set? We should investigate!</p>
+</main>
+<h1>Kinds of Information Bases</h1>
 
-   <script>
-     const init = () => {
-       const inputForm = document.querySelector('form')
+<h2>Social Information Base:</h2>
+<p>It is the most effective method for gaining access to structured data. The information is coordinated into a bunch of tables that has segments and columns.</p>
 
-       inputForm.addEventListener('submit', (event) => {
-         event.preventDefault();
-         const input = document.querySelector('input#searchByID');
+<h2>Object-situated Information Base:</h2>
+<p>In object-situated data set, the information is addressed as objects, as in object-arranged programming.</p>
 
-         fetch(`http://localhost:3000/movies/${input.value}`)
-           .then(response => {
-             if (response.ok) {
-               return response.json();
-             } else {
-               throw new Error('Movie not found');
-             }
-           })
-           .then(data => {
-             const title = document.querySelector('section#movieDetails h4');
-             const summary = document.querySelector('section#movieDetails p');
+<h2>Disseminated Information Base:</h2>
+<p>It has at least two records situated in better places. The data set might be in similar actual location on numerous PCs or dissipated over various organizations.</p>
 
-             title.innerText = data.title;
-             summary.innerText = data.summary;
-           })
-           .catch(error => {
-             console.error(error);
-             // Handle the error
-           });
-       });
-     }
+<h2>NoSQL Data Set:</h2>
+<p>NoSQL is a nonrelational information base that contains unstructured and semistructured information. It rose in fame as web applications came to be ordinarily utilized and turned out to be more mind boggling.</p>
 
-     document.addEventListener('DOMContentLoaded', init);
-   </script>
+<h2>Diagram Data Set:</h2>
+<p>Diagram data set stores information as elements and the connections between them.</p>
+
+<h2>Cloud Data Set:</h2>
+<p>Access to a cloud database is provided "as a service" and runs on a Cloud Computing platform.</p>
+
+<h2>Centralization Data Set:</h2>
+<p>CDB is found, put away, and kept up with in a solitary unified location, for instance, a centralized computer PC, work area, or server central processor.</p>
+
+<h2>Functional Information Base:</h2>
+<p>Otherwise called OLTP or online value-based handling data set, it is intended to make or refresh large measures of information and store exchanges performed by various clients continuously.</p>
+
+<h2>Information Warehouses:</h2>
+<p>It serves as the data's central repository. It holds current and verifiable information in a solitary location for logical detailing all through the enterprise.</p>
+
+<h1>Database Architect Training</h1>
+
+<p>Programming languages are used to design software in database architecture, which can be found in businesses and organizations. It primarily entails the development, implementation, and upkeep of computer programs that store and manage data for businesses.</p>
+
+<p>A DBMS's design is determined by its architecture. The engineering can be either single-level or multi-level like 1-level design, 2-level design, 3-level design, n-level engineering, and so forth.</p>
+
+<img src="https://intellipaat.com/blog/wp-content/uploads/2022/01/image-101.png" alt="Database Architecture Image">
+<img src="https://intellipaat.com/blog/wp-content/uploads/2022/01/image-102.png" alt="Image 2">
+<img src="https://intellipaat.com/blog/wp-content/uploads/2022/01/image-103.png" alt="Image 3">
+<h1>Benefits of Data Sets</h1>
+
+<ul>
+    <li>Least information overt repetitiveness</li>
+    <li>Further developed information security</li>
+    <li>Expanded consistency</li>
+    <li>Lower refreshing blunders</li>
+    <li>Decreased expenses of data entry, data storage, and data retrieval</li>
+    <li>Further improved data access using host and query languages</li>
+    <li>Higher data integrity from application programs</li>
+</ul>
+<h1>Database Languages and Examples</h1>
+
+<h2>Data Set Dialects</h2>
+<p>A DBMS provides a proper language for clients to query and update data sets. It essentially creates and maintains the database. Some examples of data set dialects are SQL, Prophet, dBase, MS Access, FoxPro, and so on. Data Definition Language (DDL), Data Control Language (DCL), Data Manipulation Language (DML), and Transaction Control Language (TCL) are the most common types of database languages.</p>
+
+<h3>Data Definition Language (DDL)</h3>
+<p>Defines data and their relationships to other data types and creates data sets, records, tables, and data dictionaries within data sets.</p>
+
+<h3>Data Control Language (DCL)</h3>
+<p>Controls access to data and the database.</p>
+
+<h3>Data Manipulation Language (DML)</h3>
+<p>Enables users to insert, retrieve, update, and delete data from the database, among other basic data manipulation operations.</p>
+
+<h3>Transaction Control Language (TCL)</h3>
+<p>Manages changes in the database made by the DML statement.</p>
+
+<p>Intellipaat provides Information Base Courses to its students by industry experts. Enroll now and get ready to learn more.</p>
+
+<h2>Examples of Data Sets</h2>
+<p>Here are a few examples of data sets:</p>
+<ul>
+    <li>Microsoft SQL Server: Developed by Microsoft, it is a Relational Database Management System (RDBMS) based on SQL.</li>
+    <li>Oracle Database: Developed by Oracle Corporation, it is often used for online transaction processing.</li>
+    <li>MySQL: A widely used Relational Database Management System based on Structured Query Language (SQL).</li>
+    <li>IBM Db2: Developed by IBM, it is designed for efficient data analysis and retrieval.</li>
+    <li>PostgreSQL: An open-source Relational Database Management System commonly used for data warehousing.</li>
+</ul>
+
+<p>Database Management System (DBMS) is a type of software that manages a database, allowing users to locate and store information within it. It can be customized to meet the user's needs and adds a layer of security to the database.</p>
+
+<p>For more information, you can also check our <a href="https://intellipaat.com/course-cat/database/?US">Database Courses</a> and our <a href="https://intellipaat.com/blog/interview-question/database-testing-interview-questions/">Database Testing Interview Questions</a> for preparing for high-level job interviews.</p>
+<h1>Benefits of the Database Management System (DBMS)</h1>
+
+<ul>
+    <li>The information is stored in a neater manner and therefore, more data can be stored.</li>
+    <li>A DBMS is a highly secure platform, so private and high-risk data can also be stored and accessed securely.</li>
+    <li>Data management is made easy with DBMS.</li>
+    <li>A well-designed DBMS significantly reduces data inconsistency.</li>
+    <li>Information can be accessed quickly.</li>
+</ul>
+
+<h1>Drawbacks of the Database Management System (DBMS)</h1>
+
+<ul>
+    <li>Maintaining the software and hardware required for a DBMS is generally expensive.</li>
+    <li>The more data is handled into the DBMS, the more disk space it occupies.</li>
+    <li>Using DBMS could seem very challenging for someone from a non-technical background.</li>
+    <li>Since all of the data is stored in a single database management system (DBMS), the organization's data could be lost if the software fails.</li>
+</ul>
+
+<h1>End</h1>
+<p>With the assistance of databases and other BI tools and computing resources, professionals in organizations can use the integrated data to facilitate improved and effective decision-making, agility, and scalability. The various types of databases, along with advancements in technology, automation, and the cloud, are driving databases in new directions.</p>
 </body>
 </html>
 

@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .h3 {
+    color: red;
+  }
+        main {
+            padding: 1rem;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 1rem;
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f0f0f0;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+            ul {
+                margin-left: 2rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        code {
+            display: block;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            white-space: pre-wrap;
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            code, .copy-button {
+                margin: 10px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            white-space: pre-wrap;
+            margin: 20px 0;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            white-space: pre-wrap;
+            margin: 20px 0;
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            white-space: pre-wrap;
+            margin: 20px 0;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+            pre {
+                margin: 30px 0;
+            }
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            white-space: pre-wrap;
+            margin: 20px 0;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+            pre {
+                margin: 30px 0;
+            }
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            white-space: pre-wrap;
+            margin: 20px 0;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+            pre {
+                margin: 30px 0;
+            }
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .copy-button {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+            section {
+                padding: 2rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        button.copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        button.copy-button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            main {
+                padding: 2rem;
+            }
+        }
+          /* Global styles */
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        /* Main content styles */
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Section styles */
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Code block styles */
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+        /* Copy button styles */
+        button.copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+        button.copy-button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 0.5rem;
+            }
+            section {
+                padding: 0.5rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        /* Main content styles */
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Section styles */
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Code block styles */
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+        /* Copy button styles */
+        button.copy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+        button.copy-button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 0.5rem;
+            }
+            section {
+                padding: 0.5rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        /* Main content styles */
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Section styles */
+        section {
+            margin-bottom: 2rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Code block styles */
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 0.5rem;
+            }
+            section {
+                padding: 0.5rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        /* Main content styles */
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Link button styles */
+        .swagger-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 0.5rem;
+            }
+            .swagger-link {
+                padding: 0.5rem 1rem;
+            }
+        }
+        body, h1, h2, p, pre, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set base font and background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Main content container */
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Preformatted text block */
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        /* Anchor link styling */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 0.5rem;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            text-align: center;
+        }
+        .footer-text {
+            font-size: 14px;
+            color: #666;
+        }
+        .footer-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java Programming, Tutorial, and MongoDB</h1>
+        <h2>Dropwizard Working Its Magic</h2>
+        <h3>
+            <a href="index.html" class="h3">
+                Go Back Home
+              </a>
+        </h3>
+    </header>
+    <main>
+        <article>
+            <p>
+                In this article, I'll demonstrate how to develop a microservice using the Dropwizard framework,
+                which offers a wide range of tools for creating web applications. Among the libraries are some of the following:
+            </p>
+            <ul>
+                <li><strong>Open-source web server Jetty:</strong> Server is small and simple to include in any application.</li>
+                <li><strong>Jersey:</strong> A RESTful web service creation implementation.</li>
+                <li><strong>Jackson:</strong> Provides conversion between POJOs and JSON objects.</li>
+                <li><strong>Metrics:</strong> Provides information regarding the status of HTTP requests, database connections, queues, etc.</li>
+                <li><strong>Guava:</strong> Supports a variety of classes to deal with strings, collections, and validations.</li>
+                <li><strong>Hibernate Validator:</strong> Offers Java object validations as constraints.</li>
+                <li><strong>JDBI:</strong> Offers a versatile way to work with relational databases by encasing JDBC.</li>
+                <li><strong>Liquibase:</strong> Ideal for DDL updates and migrations.</li>
+            </ul>
+        </article>
+    </main>
+    <code id="codeSnippet">
+        the following command: mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DgroupId=com.demo -DarchetypeVersion=1.3.5 Name: DropwizardMongoDBMicroservice -DartifactId=dropwizard-mongodb-ms -Dversion=1.0.0-SNAPSHOT
+    </code>
+    <button class="copy-button" onclick="copyCode()">Copy Code</button>
+    <main>
+        <p>Make sure Java and Maven are installed and configured, then open a terminal and paste the command below:</p>
+        <pre>
+            mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DgroupId=com.demo -DarchetypeVersion=1.3.5 Name: DropwizardMongoDBMicroservice -DartifactId=dropwizard-mongodb-ms -Dversion=1.0.0-SNAPSHOT
+        </pre>
+        <p>The final structure appears as follows:</p>
+        <pre>
+            dropwizard-mongodb-ms/
+            ├── pom.xml
+            └── src/
+                └── main/
+                    └── java/
+                        └── com/
+                            └── demo/
+                                ├── App.java
+                                └── ...
+        </pre>
+    </main>
+    <main>
+        <p>Following the creation of the project, include the dependencies in the <code>pom.xml</code> file:</p>
+        <pre id="codeSnippet">
+            &lt;properties&gt;
+                &lt;dropwizard.version&gt;1.3.5&lt;/dropwizard.version&gt;
+                &lt;mainClass&gt;com.demo.DropwizardMongoDBMicroserviceApplication&lt;/mainClass&gt;
+                &lt;mongodb.version&gt;3.8.2&lt;/mongodb.version&gt;
+                &lt;jdk.version&gt;1.8&lt;/jdk.version&gt;
+                &lt;dropwizard.swagger.version&gt;1.0.6-1&lt;/dropwizard.swagger.version&gt;
+                &lt;mockito.core.version&gt;2.23.0&lt;/mockito.core.version&gt;
+            &lt;/properties&gt;
+
+            &lt;dependencies&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;io.dropwizard&lt;/groupId&gt;
+                    &lt;artifactId&gt;dropwizard-core&lt;/artifactId&gt;
+                &lt;/dependency&gt;
+                <!-- ... other dependencies ... -->
+            &lt;/dependencies&gt;
+        </pre>
+        <button class="copy-button" onclick="copyCode()">Copy Code</button>
+        <p>Test the scope and dependencies!</p>
+    </main>
+    <main>
+        <p>I modified the configuration file by adding various configurations in <code>configurations.yaml</code>. It appears as follows:</p>
+        <pre>
+            server:
+              maximum512 threads
+              applicationContextPath: application/dropwizard-mongodb-ms
+            connectors:
+              - type: http
+                port: 8080
+              - type: http
+                port: 8081
+                administratorConnectors
+            level of logging: INFO
+            log-keepers: com.display: INFO
+
+            # You are free to select the user and password of your choice.
+            mongoDBConnection:
+              credentials:
+                "user_donuts" is the user name.
+                the term "pAsw0Rd"
+              seeds:
+                - "mongodb" as the host; port: 27017
+              the database: "donuts"
+
+            bravado:
+              baseResourcePackage: com.demo.resources
+              Path: /dropwizard-mongodb-ms
+              scan: true
+              information:
+                versions: "1.0.0"
+                "Donuts API CRUD" is the title.
+                "A straightforward API for exposing CRUD operations on MongoDB collections"
+                "http://swagger.io/terms/" is the terms of service.
+                contact:
+                  "Donuts API" is its name.
+                license:
+                  nickname: "Rich"
+        </pre>
+        <button class="copy-button">Copy Code</button>
+    </main>
+    <main>
+        <p>io.dropwizard is a class that extends from <code>configuration.yml.Configuration</code> and appears in the <code>com.demo</code> package;</p>
+        <p>Import the <code>JsonProperty</code>, the <code>MongoDBConnection</code>, and the FasterXML Jackson annotation.</p>
+        <p><code>io.federecio.dropwizard.swagger.SwaggerBundleConfiguration</code> and <code>io.dropwizard.Configuration</code> imports are required.</p>
+        <p>A common class <code>DropwizardMongoDBMicroserviceConfiguration</code> goes further:</p>
+        <pre>
+            The configuration:
+            - <code>MongoDBConnection</code>, which is private;
+            - <code>@JsonProperty("swagger")</code> <code>swaggerBundleConfiguration</code>, a private Swagger configuration;
+            - Getter and setter functions.
+        </pre>
+        <button class="copy-button">Copy Code</button>
+    </main>
+    <main>
+        <p>A portion of the code for this microservice, which will offer a REST API based on a CRUD (Create, Read, Update, Delete) model, is available in my Github repository, which you can discover at the conclusion of this tutorial.</p>
+        <p>The <code>com.mongodb.client</code> is what I'm using. In order to manipulate the CRUD activities, I constructed a DAO (Data Access Object) based on the <code>MongoCollection</code> interface for access to the collection known as <code>donuts</code>.</p>
+        <p><code>com.demo.db.daos</code> package; imports...</p>
+        <pre>
+public class TheDonutDAO {
+
+    // The complete collection of donuts
+    private final MongoCollection&lt;Document&gt; donutCollection;
+
+    /**
+     * Constructor.
+     */
+    public DonutDAO(final MongoCollection&lt;Document&gt; donutCollection) {
+        if (this.donutCollection.equals(donutCollection)) {
+            // ...
+        }
+    }
+
+    public List&lt;Donut&gt; getAll() {
+        final MongoCursor&lt;Document&gt; donuts = donutCollection.find().iterator();
+        final List&lt;Donut&gt; donutsList = new ArrayList&lt;&gt;();
+        try {
+            while (donuts.hasNext()) {
+                Document donut = donuts.next();
+                donutsList.add(DonutMapper.map(donut));
+            }
+        } finally {
+            donuts.close();
+        }
+        return donutsList;
+    }
+
+    // Other methods...
+}
+        </pre>
+        <button class="copy-button">Copy Code</button>
+    </main>
+    <main>
+        <section>
+            <h2>Utility Class for Donut Mapping</h2>
+            <p>I use a utility class that filters the fields from MongoDB to a POJO to map the data from the database to a POJO.</p>
+            <pre>
+package com.demo.util;
+
+import org.bson.Document;
+import com.demo.api.Donut;
+
+public class DonutMapper {
+
+    public static Donut mapDocumentToDonut(Document donutDocument) {
+        Donut donut = new Donut();
+        donut.setId(donutDocument.getObjectId("_id"));
+        donut.setFlavor(donutDocument.getString("flavor"));
+        donut.setPrice(donutDocument.getDouble("price"));
+        return donut;
+    }
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+        <section>
+            <h2>Donut Class for Manipulation</h2>
+            <p>To manipulate the data in MongoDB, construct a POJO.</p>
+            <pre>
+package com.demo.api;
+
+import javax.validation.constraints.NotNull;
+
+import org.bson.types.ObjectId;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+public class Donut implements Serializable {
+
+    @JsonSerialize(using = ObjectIdSerializer.class)
+    private ObjectId id;
+
+    @NotNull
+    private double price;
+
+    @NotNull
+    private String flavor;
+
+    public Donut() {
+        // Constructor
+    }
+
+    // Hashcode, equals, and toString methods
+    // Getters and setters
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>Response Class for API Response</h2>
+            <p>This class is only used in response to the endpoint.</p>
+            <pre>
+package com.demo.api;
+
+// Imports...
+
+public class Response {
+    /** The message. */
+    private String message;
+
+    public Response() {
+        // Constructor
+    }
+
+    // Getters & setters
+    // Hashcode, equals, and toString methods
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+        <section>
+            <h2>Utility Class for ObjectId Serialization</h2>
+            <p>Here are more utility classes for using Jackson to convert org.bson.types.ObjectId to String objects.</p>
+            <pre>
+import java.io.IOException;
+
+import org.bson.types.ObjectId;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+
+public class ObjectIdSerializer extends JsonSerializer&lt;ObjectId&gt; {
+    @Override
+    public void serialize(final ObjectId objectId, final JsonGenerator jsonGenerator, final SerializerProvider serializerProvider) throws IOException {
+        jsonGenerator.writeString(objectId.toString());
+    }
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>Converting String to Char Array</h2>
+            <p>The <code>com.demo.util</code> package is used to convert a String object to a char array.</p>
+            <pre>
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+
+public class PasswordSerializer extends JsonSerializer&lt;String&gt; {
+    @Override
+    public void serialize(final String input, final JsonGenerator jsonGenerator, final SerializerProvider serializerProvider) throws IOException {
+        jsonGenerator.writeString(input.toCharArray(), 0, input.toCharArray().length);
+    }
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+        <section>
+            <h2>Mapping Credentials to Configuration</h2>
+            <p>Use these POJOs from the <code>com.demo.db.configuration</code> package to map information to the <code>configuration.yml</code>.</p>
+            <pre>
+import java.util.Objects;
+import java.util.Arrays;
+
+import com.demo.util.PasswordSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+// Other relevant imports...
+
+public class Credentials {
+    private String username; /** The user name. */
+    
+    private char[] password;
+    
+    @JsonSerialize(using = PasswordSerializer.class)
+    public char[] getPassword() {
+        return password;
+    }
+    // Other methods for getters, setters, hashcode, and equals.
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>Seed Class in com.demo.db.configuration</h2>
+            <p>Bring up the <code>java.util.Objects</code>.</p>
+            <pre>
+package com.demo.db.configuration;
+
+import java.util.Objects;
+
+public class Seed {
+    private String host; /** The host. */
+    private int port; /** The port. */
+
+    // Getters, setters, hashcode, and equals methods.
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+        <section>
+            <h2>MongoDBConnection Class in com.demo.db.configuration</h2>
+            <p><code>private Credentials</code>, including the user name and password.</p>
+            <pre>
+package com.demo.db.configuration;
+
+import java.util.List;
+
+public class MongoDBConnection {
+    private Credentials credentials; /** Including the user name and password. */
+    private List&lt;Seed&gt; seeds; /** The list of seeds. */
+    private String database; /** The database, denoted by the symbol /** The db. */. */
+
+    // Getters, setters, hashcode, and equals methods.
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>Managing Objects with Dropwizard's Managed Interface</h2>
+            <p>The interface <code>io.dropwizard.lifecycle.Managed</code> and class <code>io.dropwizard.lifecycle.MongoDBManaged</code> in the Dropwizard life cycle can be used to manage objects.</p>
+            <pre>
+package com.demo.db;
+
+// Imports...
+
+public class MongoDBManaged implements Managed {
+
+    private final MongoClient mongoClient;
+
+    public MongoDBManaged(final MongoClient mongoClient) {
+        this.mongoClient = mongoClient;
+    }
+
+    @Override
+    public void start() throws Exception {
+        // Do initialization or setup here
+    }
+
+    @Override
+    public void stop() throws Exception {
+        mongoClient.close();
+    }
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+        <section>
+            <h2>Creating a Healthcheck</h2>
+            <p>An additional crucial class is <code>Healthcheck</code>, which may be created by simply extending from <code>com.codahale.metrics.health.HealthCheck</code> and implementing the method <code>check</code>.</p>
+            <pre>
+package com.demo.db;
+
+import com.codahale.metrics.health.HealthCheck;
+
+public class CustomHealthcheck extends HealthCheck {
+
+    @Override
+    protected Result check() throws Exception {
+        // Implement your health check logic here
+        // Return a Result indicating the health status
+        return Result.healthy();
+    }
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>Implementing a Health Check</h2>
+            <p>The <code>HealthCheck</code> class in the <code>com.demo.health</code> package implements a health check for a MongoDB client.</p>
+            <pre>
+package com.demo.health;
+
+import com.codahale.metrics.health.HealthCheck;
+import com.mongodb.client.MongoClient;
+import org.bson.Document;
+
+public class DropwizardMongoDBHealthCheck extends HealthCheck {
+
+    private final MongoClient mongoClient;
+
+    public DropwizardMongoDBHealthCheck(final MongoClient mongoClient) {
+        this.mongoClient = mongoClient;
+    }
+
+    @Override
+    protected Result check() throws Exception {
+        try {
+            final Document document = mongoClient.getDatabase("donuts").runCommand(new Document("buildInfo", 1));
+            if (document == null) {
+                return Result.unhealthy("Cannot perform operation buildInfo in Database.");
+            }
+            return Result.healthy();
+        } catch (final Exception e) {
+            return Result.unhealthy("Cannot get the information from database.");
+        }
+    }
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>Microservice Entry Point Class</h2>
+            <p>The class <code>com.demo</code> serves as this microservice's entry point.</p>
+            <pre>
+// Imports...
+
+public class ApplicationDropwizardMongoDBMicroserviceConfiguration> implements DropwizardMongoDBMicroserviceApplication {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DropwizardMongoDBMicroserviceApplication.class);
+
+    public static void main(final String[] args) throws Exception {
+        new DropwizardMongoDBMicroserviceApplication();
+        LOGGER.info("Start application.").run(args);
+    }
+
+    @Override
+    public String getName() {
+        return "DropwizardMongoDBMicroservice";
+    }
+
+    // Other methods...
+}
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+    <main>
+        <section>
+            <h2>Building and Running the Project</h2>
+            <p>When running the command to build the project:</p>
+            <pre>
+mvn clean package
+            </pre>
+            <p>The database is necessary before the application can run; you may get MongoDB by downloading it from the website or using a Docker image from DockerHub.</p>
+            <p>Start a new container once the MongoDB image has been downloaded:</p>
+            <pre>
+docker run --name mongodb -p 27017:27017 mongo
+            </pre>
+            <p><strong>NOTE:</strong> To ensure the durability of information, make sure to create a volume.</p>
+            <p>Type the following commands once inside the container:</p>
+            <pre>
+docker exec -it [container name or id] /bin/bash
+mongo
+use donuts
+db.createUser({user: "user_donuts", pwd: "pAsw0Rd", roles: [{role: "readWrite", db: "donuts"}]})
+            </pre>
+            <p><strong>SCRAM</strong> is the authentication method that MongoDB chooses by default.</p>
+            <p>Lastly, run the program by using the following command:</p>
+            <pre>
+java -jar server configuration.yml target/dropwizard-mongodb-ms-1.0.0-SNAPSHOT
+            </pre>
+            <p>Once the user has been created, and We may input the swagger documentation in the database by going to the following URL:</p>
+        </section>
+    </main>
+    <main>
+        <p>Click the button below to access the Swagger API documentation:</p>
+        <a href="http://localhost:8080/dropwizard-mongodb-ms/swagger" target="_blank" class="swagger-link">Open Swagger Documentation</a>
+    </main>
+    <main>
+        <p>Docker gives us a special environment, and all developers maintain synchronization of dependencies, databases, web servers, etc. This is one of the reasons we use it every day. The quick approach to create and use artifacts speeds up delivery.</p>
+        <p>This is an example of a docker compose file, which I use to start the application and the MongoDB server. I also add the Nginx proxy to receive requests.</p>
+        <pre>
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    ports:
+      - "27017:27017"
+    networks:
+      - dropw-mongodb-ntw
+  // ... (other service configurations)
+        </pre>
+        <button class="copy-button" onclick="copyCode(this)">Copy Code</button>
+    </main>
+    <main>
+        <section>
+            <h2>Creating Docker Network</h2>
+            <p>With the following command, we create the Docker network:</p>
+            <pre>
+$ docker network create dropw-mongodb-ntw
+            </pre>
+        </section>
+        <section>
+            <h2>Building the Project</h2>
+            <p>Construct the project with the following command:</p>
+            <pre>
+$ mvn clean package
+            </pre>
+        </section>
+        <section>
+            <h2>Starting Docker Compose</h2>
+            <p>Begin Docker Compose to start the services:</p>
+            <pre>
+$ docker-compose up
+            </pre>
+        </section>
+        <section>
+            <h2>Creating Database User</h2>
+            <p>Access the container and generate the database user with the following commands:</p>
+            <pre>
+$ docker exec -it [container name or id] /bin/bash
+$ mongo
+use donuts
+db.createUser({
+    user: "user_donuts",
+    pwd: "pAsw0Rd",
+    roles: [{ role: "readWrite", db: "donuts" }]
+});
+            </pre>
+        </section>
+        <section>
+            <h2>Accessing Swagger UI</h2>
+            <p>Access the Swagger UI at:</p>
+            <a href="https://help.sap.com/docs/SAP_HANA_PLATFORM/a218504f2bec49ada9d77e4f00b0495c/e65608a40d4d42a1964c32a8cd421750.html" target="_blank">http://localhost:8080/dropwizard-mongodb-ms/swagger</a>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Dropwizard offers a variety of tools to simplify Microservices development, including integration with technologies like MongoDB, Docker, and Nginx. While specifics may vary based on requirements, this provides a great starting point to explore and share experiences.</p>
+            <p>The project repository can be found on <a href="https://github.com/ricdev2/dropwizard-mongodb-ms" target="_blank">GitHub</a>.</p>
+        </section>
+    </main>
+    <div>
+        <footer>
+            <p class="footer-text">
+                &copy; Copyright 2023 <a href="#">codewithwilsonwajiru</a>
+            </p>
+        </footer>
+    </div>
+    <br/>
+</body>
+<script>
+  // Add a click event listener to all "Copy Code" buttons
+  const copyButtons = document.querySelectorAll('.copy-button');
+        copyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const codeBlock = button.parentNode.querySelector('pre');
+                const textArea = document.createElement('textarea');
+                textArea.value = codeBlock.textContent;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Code copied to clipboard!');
+            });
+        });
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
+
