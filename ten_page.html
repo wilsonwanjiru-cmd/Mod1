@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+                                              /* Add this CSS to style the link */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        footer {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Adjust the iframe for small screens */
+        iframe {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        /* Media Query for Small Screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        /* styles */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ol {
+            margin: 20px;
+        }
+        code {
+            background-color: #f2f2f2;
+            padding: 2px 4px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        /* styles */
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .typing-container {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .typing-textarea {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        textarea {
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .typing-controls {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        #send-btn,
+        #theme-btn,
+        #delete-btn,
+        #copy-button {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        /* styles */
+                /* Additional CSS for responsiveness */
+                @media screen and (max-width: 600px) {
+            .chat-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .chat-messages {
+                max-height: 200px;
+                overflow-y: scroll;
+            }
+        }
+        /* styles */
+          /* Default styles for larger screens */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+      padding: 10px; /* Add some padding for better readability on small screens */
+    }
+  }
+  /* styles */
+
+  h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Code snippet styles */
+        pre {
+            font-family: Consolas, monospace;
+            font-size: 16px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        /* Copy button styles */
+        #copyButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Copy status styles */
+        #copyStatus {
+            font-size: 14px;
+            color: #007bff;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            pre {
+                font-size: 14px;
+            }
+        }
+        /* styles */
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        /* styles */
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+       
+          
+    </style>
+</head>
+<body>
+    <div>
+        <a href="index.html" class="h3 link-button">
+            Go Back Home
+        </a>
+    </div>
+    <h1>How to Write Your Own ChatGPT with JavaScript, CSS, and HTML</h1>
+    <p>The way we communicate with automated chatbots has drastically changed in the last few months or years thanks to ChatGPT. You might be interested in developing your own ChatGPT if you're a novice web developer. The good news is that a ChatGPT clone can be made with HTML, CSS, and plain JavaScript.</p>
+
+    <p>If you're not familiar, OpenAI developed ChatGPT, a sophisticated chatbot model. It generates human-like responses in a conversational format using artificial intelligence. Due to its capacity to mimic real interactions, ChatGPT has become extremely popular.</p>
+
+    <p>I will walk you through the process of making your very own ChatGPT using HTML, CSS, and JavaScript in this blog article. By constructing a ChatGPT</p>
+
+    <h1>ChatGPT Clone HTML & JavaScript Video Tutorial</h1>
+    
+    <!-- YouTube Video Embed -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/atKtG29iroY?si=T3-uU_AdPHg7W1sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>The offered video is a great resource for you to learn how to create your own ChatGPT if you learn best through video lessons. I break down each line of code in the video and include helpful comments to make it understandable for beginners.</p>
+    <p>You can read this post if you like to read blogs or if you just want a short rundown of the procedures for making a ChatGPT clone project. You'll have your own ChatGPT that you can chat with by the end of this article.</p>
+
+    <h1>How to Create a JavaScript & HTML ChatGPT Clone</h1>
+    
+    <ol>
+        <li>Establish a folder. You can give this folder any name you like, and then create the aforementioned files inside of it.</li>
+        <li>Make a file called <code>index.html</code>. The file must have the name <code>index</code> and the <code>.html</code> extension.</li>
+        <li><code>style.css</code> should be created. <code>Style</code> and its extension must be in the file name <code>.css</code>.</li>
+        <li>Make a file called <code>script.js</code>. The file name and extension must both be <code>script.js</code>.</li>
+        <li>Place the <code>pictures</code> folder in your project directory after downloading it. The chatbot logo and user avatar are both contained in this folder.</li>
+    </ol>
+    
+    <p>Add the following HTML codes to your <code>index.html</code> file to get started:</p>
+    
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;ChatGPT Clone&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="chat-container"&gt;
+        &lt;!-- Chat messages will be added here dynamically with JavaScript --&gt;
+    &lt;/div&gt;
+    &lt;div class="user-input"&gt;
+        &lt;input type="text" id="user-message" placeholder="Type your message..."&gt;
+        &lt;button id="send-button"&gt;Send&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <p>You will discover an empty "chat-container" div in this chunk of code. We will later use JavaScript to dynamically add the “chat” div that will contain all the chat details.</p>
+
+    <!-- Chats Container -->
+    <div class="chat-container">
+        <!-- Typing container -->
+        <div class="typing-container">
+            <div class="typing-content">
+                <div class="typing-textarea">
+                    <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+                    <span id="send-btn" class="material-symbols-rounded">Send</span>
+                </div>
+                <div class="typing-controls">
+                    <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+                    <span id="delete-btn" class="material-symbols-rounded">delete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code Snippet -->
+    <div>
+        <pre id="code">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en" dir="ltr"&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;ChatGPT Clone in JavaScript | WilsonWanjiru&lt;/title&gt;
+                &lt;link rel="stylesheet" href="style.css"&gt;
+                &lt;!-- Google Fonts Link For Icons --&gt;
+                &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@100..700"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!-- Chats Container --&gt;
+                &lt;div class="chat-container"&gt;
+                    &lt;!-- Typing container --&gt;
+                    &lt;div class="typing-container"&gt;
+                        &lt;div class="typing-content"&gt;
+                            &lt;div class="typing-textarea"&gt;
+                                &lt;textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required&gt;&lt;/textarea&gt;
+                                &lt;span id="send-btn" class="material-symbols-rounded"&gt;Send&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class="typing-controls"&gt;
+                                &lt;span id="theme-btn" class="material-symbols-rounded"&gt;light_mode&lt;/span&gt;
+                                &lt;span id="delete-btn" class="material-symbols-rounded"&gt;delete&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <button id="copy-button-snippet">Copy Code</button>
+    </div>
+
+    <div class="chat-messages">
+       
+        <p>Then, include the subsequent CSS codes in your style. Apply visual decoration to your ChatGPT interface using a CSS file.</p>
+        <p>The web page will now load in your browser and show ChatGPT with a text input area and a few icons at the bottom.</p>
+    </div>
+
+    <h1>CSS Code</h1>
+    <pre id="css-code" style="white-space: pre-wrap; font-family: 'Poppins', sans-serif;"></pre>
+    <button id="copy-button-css">Copy CSS Code</button>
+
+    <p>Add the following JavaScript code to your <code>script.js</code> file to complete the process. By activating functions like chat, switching between dark and light themes, and saving conversation history in the browser, this script code will make your ChatGPT functional.</p>
+
+        <!-- Display the code snippet -->
+        <pre>const chatInput = document.querySelector("#chat-input");
+            const sendButton = document.querySelector("#send-btn");
+            const chatContainer = document.querySelector(".chat-container");
+            const themeButton = document.querySelector("#theme-btn");
+            const deleteButton = document.querySelector("#delete-btn");
+            let userText = null;
+            const API_KEY = "PASTE-YOUR-API-KEY-HERE"; // Paste your API key here
+            const loadDataFromLocalstorage = () => {
+                // Load saved chats and theme from local storage and apply/add on the page
+                const themeColor = localStorage.getItem("themeColor");
+                document.body.classList.toggle("light-mode", themeColor === "light_mode");
+                themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
+                const defaultText = `<div class="default-text">
+                                        <h1>ChatGPT Clone</h1>
+                                        <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+                                    </div>`
+                chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
+                chatContainer.scrollTo(0, chatContainer.scrollHeight); // Scroll to bottom of the chat container
+            }
+            const createChatElement = (content, className) => {
+                // Create new div and apply chat, specified class and set html content of div
+                const chatDiv = document.createElement("div");
+                chatDiv.classList.add("chat", className);
+                chatDiv.innerHTML = content;
+                return chatDiv; // Return the created chat div
+            }
+            const getChatResponse = async (incomingChatDiv) => {
+                const API_URL = "https://api.openai.com/v1/completions";
+                const pElement = document.createElement("p");
+                // Define the properties and data for the API request
+                const requestOptions = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        model: "text-davinci-003",
+                        prompt: userText,
+                        max_tokens: 2048,
+                        temperature: 0.2,
+                        n: 1,
+                        stop: null
+                    })
+                }
+                // Send POST request to API, get response and set the reponse as paragraph element text
+                try {
+                    const response = await (await fetch(API_URL, requestOptions)).json();
+                    pElement.textContent = response.choices[0].text.trim();
+                } catch (error) { // Add error class to the paragraph element and set error text
+                    pElement.classList.add("error");
+                    pElement.textContent = "Oops! Something went wrong while retrieving the response. Please try again.";
+                }
+                // Remove the typing animation, append the paragraph element and save the chats to local storage
+                incomingChatDiv.querySelector(".typing-animation").remove();
+                incomingChatDiv.querySelector(".chat-details").appendChild(pElement);
+                localStorage.setItem("all-chats", chatContainer.innerHTML);
+                chatContainer.scrollTo(0, chatContainer.scrollHeight);
+            }
+            const copyResponse = (copyBtn) => {
+                // Copy the text content of the response to the clipboard
+                const reponseTextElement = copyBtn.parentElement.querySelector("p");
+                navigator.clipboard.writeText(reponseTextElement.textContent);
+                copyBtn.textContent = "done";
+                setTimeout(() => copyBtn.textContent = "content_copy", 1000);
+            }
+            const showTypingAnimation = () => {
+                // Display the typing animation and call the getChatResponse function
+                const html = `<div class="chat-content">
+                                <div class="chat-details">
+                                    <img src="images/chatbot.jpg" alt="chatbot-img">
+                                    <div class="typing-animation">
+                                        <div class="typing-dot" style="--delay: 0.2s"></div>
+                                        <div class="typing-dot" style="--delay: 0.3s"></div>
+                                        <div class="typing-dot" style="--delay: 0.4s"></div>
+                                    </div>
+                                </div>
+                                <span onclick="copyResponse(this)" class="material-symbols-rounded">content_copy</span>
+                            </div>`;
+                // Create an incoming chat div with typing animation and append it to chat container
+                const incomingChatDiv = createChatElement(html, "incoming");
+                chatContainer.appendChild(incomingChatDiv);
+                chatContainer.scrollTo(0, chatContainer.scrollHeight);
+                getChatResponse(incomingChatDiv);
+            }
+            const handleOutgoingChat = () => {
+                userText = chatInput.value.trim(); // Get chatInput value and remove extra spaces
+                if(!userText) return; // If chatInput is empty return from here
+                // Clear the input field and reset its height
+                chatInput.value = "";
+                chatInput.style.height = `${initialInputHeight}px`;
+                const html = `<div class="chat-content">
+                                <div class="chat-details">
+                                    <img src="images/user.jpg" alt="user-img">
+                                    <p>${userText}</p>
+                                </div>
+                            </div>`;
+                // Create an outgoing chat div with user's message and append it to chat container
+                const outgoingChatDiv = createChatElement(html, "outgoing");
+                chatContainer.querySelector(".default-text")?.remove();
+                chatContainer.appendChild(outgoingChatDiv);
+                chatContainer.scrollTo(0, chatContainer.scrollHeight);
+                setTimeout(showTypingAnimation, 500);
+            }
+            deleteButton.addEventListener("click", () => {
+                // Remove the chats from local storage and call loadDataFromLocalstorage function
+                if(confirm("Are you sure you want to delete all the chats?")) {
+                    localStorage.removeItem("all-chats");
+                    loadDataFromLocalstorage();
+                }
+            });
+            themeButton.addEventListener("click", () => {
+                // Toggle body's class for the theme mode and save the updated theme to the local storage 
+                document.body.classList.toggle("light-mode");
+                localStorage.setItem("themeColor", themeButton.innerText);
+                themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
+            });
+            const initialInputHeight = chatInput.scrollHeight;
+            chatInput.addEventListener("input", () => {   
+                // Adjust the height of the input field dynamically based on its content
+                chatInput.style.height =  `${initialInputHeight}px`;
+                chatInput.style.height = `${chatInput.scrollHeight}px`;
+            });
+            chatInput.addEventListener("keydown", (e) => {
+                // If the Enter key is pressed without Shift and the window width is larger 
+                // than 800 pixels, handle the outgoing chat
+                if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+                    e.preventDefault();
+                    handleOutgoingChat();
+                }
+            });
+            loadDataFromLocalstorage();
+            sendButton.addEventListener("click", handleOutgoingChat);</pre>
+              
+              <!-- Button to copy the code -->
+              <button id="copyButton">Copy Code</button>
+              
+              <p id="copyStatus"></p>
+
+              <h1>OpenAI API Key Instructions</h1>
+              <p>Please keep in mind that your ChatGPT is not yet equipped to produce chats from prompts. You must pay close attention to a vital aspect of the code in order to make it work. You must paste an "OpenAI API key" into the API_KEY field, as you can see if you look more closely.</p>
+              
+              <p>Visit <a href="https://platform.openai.com/account/api-keys" target="_blank">https://platform.openai.com/account/api-keys</a> to obtain your API key. You can create a free API key by logging into your account there after arriving.</p>
+              
+              <p>To comprehend more aspects of the code, I suggest viewing the instructional video, going over the code comments, and playing around with the code.</p>
+          
+              <p>Keep in mind that you'll receive a free $5 credit for your API usage when you sign up for OpenAI. When an account is more than three months old or the credit runs out, you’ll need a paid account or create a new one with a new number to keep using the API. Your API usage and expiration date can be found on the account’s usage page.</p>
+
+              <h1>Final Thoughts and Conclusion</h1>
+              <p>Congratulations! Using HTML, CSS, and plain JavaScript, you were able to effectively develop a ChatGPT clone project and incorporate the OpenAI API. You may now have deep discussions and show off your skills to friends and others. You can download the source code files for this ChatGPT clone project for free by clicking the <a class="button" href="https://github.com/wilsonwanjiru-cmd/chatGTP">Download</a> button if you run into any problems while developing your own ChatGPT or if your code is not performing as planned. </p>
+          
+              <p>Keep in mind that after downloading the file, you must insert an "OpenAI API key" into the script.js file's API_KEY variable. Visit the <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys page</a> to acquire your API key.</p>
+
+    
+
+    <div>
+        <p><i>If you'd like to get in touch or discuss potential collaboration opportunities, feel free to drop me an email at <a href="mailto:wilsonmuita41@gmail.com">wilsonmuita41@gmail.com</a>. I'm also active on <a href="https://www.linkedin.com/in/wilson-muita-34261021a/" target="_blank">LinkedIn</a> and <a href="https://www.facebook.com/muita.alex" target="_blank">Facebook</a>, where I share web development insights and updates.</i></p>
+
+        <p><i>Thank you for visiting my blog, and I hope you find it informative and inspiring. Let's connect and embark on this exciting journey together!</i></p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Wilson Muita. All rights reserved.</p>
+    </footer>
+
+    <!-- Ionicon link -->
+    <script>
+        const copyButtonSnippet = document.getElementById("copy-button-snippet");
+        const codeSnippet = document.getElementById("code");
+
+        copyButtonSnippet.addEventListener("click", () => {
+            const codeText = codeSnippet.innerText;
+            const textarea = document.createElement("textarea");
+            textarea.value = codeText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Code copied to clipboard!");
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cssCode = `
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-color: #FFFFFF;
+  --icon-color: #ACACBE;
+  --icon-hover-bg: #5b5e71;
+  --placeholder-color: #dcdcdc;
+  --outgoing-chat-bg: #343541;
+  --incoming-chat-bg: #444654;
+  --outgoing-chat-border: #343541;
+  --incoming-chat-border: #444654;
+}
+.light-mode {
+  --text-color: #343541;
+  --icon-color: #a9a9bc;
+  --icon-hover-bg: #f1f1f3;
+  --placeholder-color: #6c6c6c;
+  --outgoing-chat-bg: #FFFFFF;
+  --incoming-chat-bg: #F7F7F8;
+  --outgoing-chat-border: #FFFFFF;
+  --incoming-chat-border: #D9D9E3;
+}
+body {
+  background: var(--outgoing-chat-bg);
+}
+/* Chats container styling */
+.chat-container {
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-bottom: 150px;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar-track {
+  background: var(--incoming-chat-bg);
+  border-radius: 25px;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar-thumb {
+  background: var(--icon-color);
+  border-radius: 25px;
+}
+.default-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  padding: 0 10px;
+  text-align: center;
+  color: var(--text-color);
+}
+.default-text h1 {
+  font-size: 3.3rem;
+}
+.default-text p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.chat-container .chat {
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+.chat-container .chat.outgoing {
+  background: var(--outgoing-chat-bg);
+  border: 1px solid var(--outgoing-chat-border);
+}
+.chat-container .chat.incoming {
+  background: var(--incoming-chat-bg);
+  border: 1px solid var(--incoming-chat-border);
+}
+.chat .chat-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+span.material-symbols-rounded {
+  user-select: none;
+  cursor: pointer;
+}
+.chat .chat-content span {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--icon-color);
+  visibility: hidden;
+}
+.chat:hover .chat-content:not(:has(.typing-animation), :has(.error)) span {
+  visibility: visible;
+}
+.chat .chat-details {
+  display: flex;
+  align-items: center;
+}
+.chat .chat-details img {
+  width: 35px;
+  height: 35px;
+  align-self: flex-start;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.chat .chat-details p {
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+  padding: 0 50px 0 25px;
+  color: var(--text-color);
+  word-break: break-word;
+}
+.chat .chat-details p.error {
+  color: #e55865;
+}
+.chat .typing-animation {
+  padding-left: 25px;
+  display: inline-flex;
+}
+.typing-animation .typing-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  margin: 0 3px;
+  opacity: 0.7;
+  background: var(--text-color);
+  animation: animateDots 1.5s var(--delay) ease-in-out infinite;
+}
+.typing-animation .typing-dot:first-child {
+  margin-left: 0;
+}
+@keyframes animateDots {
+  0%,44% {
+    transform: translateY(0px);
+  }
+  28% {
+    opacity: 0.4;
+    transform: translateY(-6px);
+  }
+  44% {
+    opacity: 0.2;
+  }
+}
+/* Typing container styling */
+.typing-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px 10px;
+  justify-content: center;
+  background: var(--outgoing-chat-bg);
+  border-top: 1px solid var(--incoming-chat-border);
+}
+.typing-container .typing-content {
+  display: flex;
+  max-width: 950px;
+  width: 100%;
+  align-items: flex-end;
+}
+.typing-container .typing-textarea {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.typing-textarea textarea {
+  resize: none;
+  height: 55px;
+  width: 100%;
+  border: none;
+  padding: 15px 45px 15px 20px;
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: var(--incoming-chat-bg);
+  outline: 1px solid var(--incoming-chat-border);
+}
+.typing-textarea textarea::placeholder {
+  color: var(--placeholder-color);
+}
+.typing-content span {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  border-radius: 4px;
+  font-size: 1.35rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+.typing-textarea span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+.typing-textarea textarea:valid ~ span {
+  visibility: visible;
+}
+.typing-controls {
+  display: flex;
+}
+.typing-controls span {
+  margin-left: 7px;
+  font-size: 1.4rem;
+  background: var(--incoming-chat-bg);
+  outline: 1px solid var(--incoming-chat-border);
+}
+.typing-controls span:hover {
+  background: var(--icon-hover-bg);
+}
+/* Reponsive Media Query */
+@media screen and (max-width: 600px) {
+  .default-text h1 {
+    font-size: 2.3rem;
+  }
+  :where(.default-text p, textarea, .chat p) {
+    font-size: 0.95rem!important;
+  }
+  .chat-container .chat {
+    padding: 20px 10px;
+  }
+  .chat-container .chat img {
+    height: 32px;
+    width: 32px;
+  }
+  .chat-container .chat p {
+    padding: 0 20px;
+  }
+  .chat .chat-content:not(:has(.typing-animation), :has(.error)) span {
+    visibility: visible;
+  }
+  .typing-container {
+    padding: 15px 10px;
+  }
+  .typing-textarea textarea {
+    height: 45px;
+    padding: 10px 40px 10px 10px;
+  }
+  .typing-content span {
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+  }
+  span.material-symbols-rounded {
+    font-size: 1.25rem!important;
+  }
+}`;
+
+            // Display the CSS code
+            const cssCodeElement = document.getElementById("css-code");
+            cssCodeElement.textContent = cssCode;
+
+            // Add copy functionality for CSS code
+            const copyButtonCss = document.getElementById("copy-button-css");
+            copyButtonCss.addEventListener("click", function () {
+                const textArea = document.createElement("textarea");
+                textArea.value = cssCode;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
+                alert("CSS code copied to clipboard!");
+            });
+        });
+        
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
