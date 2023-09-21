@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
+
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+                                              /* Add this CSS to style the link */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; /* Change to your desired background color */
+    color: #FFF; /* Change to your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+}
+   /* styles */
+   body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+        /* styles */
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+        /* styles */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+        /* styles */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        code {
+            background-color:darkslategrey;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+        /* styles */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+        /* styles */
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+        /* styles */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 10px;
+            }
+        }
+        /* styles */
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* styles */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* styles */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+        /* styles */
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* styles */
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* styles */
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* styles */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        /* styles */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: slategrey;
+            padding: 10px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+            color: white;
+            overflow-x: auto; /* Horizontal scroll on small screens */
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            background-color: black; /* Black background */
+            color: white; /* White text */
+        }
+        /* styles */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* styles */
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        pre {
+            background-color: slategrey;
+            padding: 10px;
+            font-family: Consolas, monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+            color: white;
+            overflow-x: auto; /* Horizontal scroll on small screens */
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            color: #f4f4f4;
+            background-color: #333;
+            padding: 2px 4px;
+        }
+        /* styles */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+
+        
+
+        
+   
+   
+   
+       
+          
+    </style>
+</head>
+<boby>
+    <div>
+        <a href="index.html" class="h3 link-button">
+            Go Back Home
+        </a>
+    </div>
+    <h1>How to Integrate Node.js Backend with React</h1>
+
+    <p>In this article, we'll discover how to link React to Node.js on the backend. As a backend framework, Express.js will be utilized.</p>
+
+    <h2>Frontend Definition:</h2>
+
+    <p>The front end, to put it simply, is the user interface that they view and interact with. HTML, CSS, and JavaScript make up the majority of front-end development technology. The client side is another name for it.</p>
+
+    <p>We employ frameworks like React, Angular, Vue, and others to make frontend development simpler. Today's article will make use of React. On codedamn, there is a free React course you can take to get started with the technology.</p>
+
+    <p>If you wish to pursue a career in the field of frontend development, have a look at this <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fbb-tutorials-and-thoughts%2Fhow-to-develop-and-build-react-app-with-nodejs-backend-typescript-version-27a6a283a7c5&psig=AOvVaw2S_0GbOZbV89EUh9Cas6p_&ust=1695373392653000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMDZ-Jisu4EDFQAAAAAdAAAAABAE" target="_blank" rel="noopener noreferrer">blog post on how to develop and build React apps with Node.js backend</a> if you wish to pursue a career in that field in 2023.</p>
+
+    <h1>Describe Backend</h1>
+
+    <p>Backend development is the process of building the application's server side. It primarily manages the application's data and logic. Backend development uses tools like Express.js, Python, Java, PHP, etc.</p>
+
+    <p>Express.js, a Node.js back-end web application framework, will be used in this tutorial.</p>
+
+    <h1>What's the Relationship Between the Frontend and Backend?</h1>
+
+    <p>The front end and back end can be joined in a number of ways. We will use an API (Application Programming Interface) endpoint that is exposed from the backend in this tutorial's front end. Our front end and back end will function in tandem in this manner.</p>
+
+    <h1>Prerequisites - Installing Node.js</h1>
+
+    <p>Node.js must be installed on your computer.</p>
+
+    <p>The usage of Node Version Manager is the simplest method for installing Node.js. You can install, update, and switch between several Node.js versions with this bash script.</p>
+
+    <p>The following command can be used to install the most recent version of Node.js after nvm has been installed:</p>
+
+    <pre><code>install node nvm</code></pre>
+
+    <p>By using the following command, you may determine the Node.js version:</p>
+
+    <pre><code>node -v</code></pre>
+
+    <p><b>Bash</b>, abbreviated as bash.</p>
+
+    <p><b>Npm</b> (Node Package Manager) will also be installed on your system when Node.js is. Run the following command to determine the version of npm:</p>
+
+    <pre><code>npm -v</code></pre>
+
+    <h1>Install Node.js and Check Versions</h1>
+
+    <p>Follow these steps to install Node.js and check the versions of Node and npm:</p>
+
+    <ol>
+        <li>Download and install Node.js from the official website: <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">https://nodejs.org/</a></li>
+        <li>Open your command prompt or terminal.</li>
+        <li>To check the version of Node.js, run the following command:</li>
+    </ol>
+
+    <pre><code>node -v</code></pre>
+
+    <ol start="4">
+        <li>To check the version of npm (Node Package Manager), run the following command:</li>
+    </ol>
+
+    <pre><code>npm -v</code></pre>
+
+    <p>Ensure that you have Node.js and npm installed and that you see their respective version numbers.</p>
+
+    <img src="https://i.stack.imgur.com/MeyKJ.png" alt="Node.js Installation Screenshot">
+
+    <h1>Project Organization and React Setup</h1>
+
+    <h2>Project Organization</h2>
+    <p>The backend code will be placed in the server folder, and the frontend code in the client folder. To build the front-end application, we'll utilize create-react-app.</p>
+
+    <h2>Building the Frontend React Application</h2>
+    <p>We'll start by building a React application. Run the following command in your terminal to build a React application:</p>
+
+    <pre><code>create-react-app client</code></pre>
+
+    <p><b>Bash</b>, abbreviated as bash.</p>
+
+    <p>If something similar is stated:</p>
+
+    <pre><code>Installing the upcoming packages is necessary:
+create-react-app@5.0.1
+You may go now? Bash (bash) is the language of code.</code></pre>
+
+    <p>After that, press Y and enter.</p>
+
+    <h1>Create React App and Start the Application</h1>
+
+    <p>This program will generate boilerplate code for a React app in the client folder.</p>
+
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*3LeWKvRZtMksrushpvKRSw.png" alt="React Boilerplate" />
+
+    <p>After creating the React app, run the following command in your terminal to launch the React application:</p>
+
+    <pre><code>cd client
+npm start</code></pre>
+
+    <p><b>Bash</b>, abbreviated as bash.</p>
+
+    <p>The React application will launch with this command on port 3000.</p>
+
+    <img src="https://carldesouza.com/wp-content/uploads/2020/06/img_5ef7d8bfc7475.png" alt="React App Running" />
+
+
+
+    <p>Browse to <code>http://localhost:3000</code> in your browser. There you can see how the React application is now operating:</p>
+
+    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1604762708359/Z0pvQfjdA.png" alt="React App Running" />
+
+    <p>Let's start building the backend application now that the frontend application is operational.</p>
+
+    <h2>Step 2: Constructing the Node.js Server's Backend</h2>
+    <p>Setting up the prerequisites:</p>
+
+    <pre><code>Open a new terminal and start a Node.js project in the server directory you just made.
+
+npm init -y
+mkdir server
+cd server</code></pre>
+
+
+<p>Note: To start the project without any prompts, use <code>npm init -y</code>. <code>npm init</code> can be used to initialize the project with prompts. <a href="https://docs.npmjs.com/cli/v7/commands/npm-init" target="_blank" rel="noopener noreferrer">npm init information may be found here.</a></p>
+
+<p>The next step is to install the application's necessary dependencies:</p>
+
+<pre><code>npm install cors express</code></pre>
+
+<p><b>Bash</b>, abbreviated as bash.</p>
+
+<p>We will set up nodemon as a development dependency for our needs:</p>
+
+<pre><code>npm install nodemon --save-dev</code></pre>
+
+<div>
+    <p>We'll install the server prerequisites that are necessary for our backend application:</p>
+
+    <ul>
+        <li>express: A Node.js web application framework.</li>
+        <li>cors: A Node.js package used to support cross-origin queries (CORS).</li>
+        <li>nodemon: A tool to automatically restart the server when source code modifications are detected.</li>
+    </ul>
+
+    <img src="https://parallelcodes.com/wp-content/uploads/2020/11/npm-nodemon-install-command.png" alt="npm install nodemon command" />
+
+    <p>To start the server, we will add a start script to the <code>package.json</code> file:</p>
+
+    <pre><code>"scripts": {
+    "start": "nodemon server.js",
+    "dev": "node server.js"
+}</code></pre>
+</div>
+
+<div>
+    <p>At this stage, the dev and start scripts have been added to the package.json file, and all of the dependencies have been installed. Let's start the server creation process right away.</p>
+
+    <h2>1. Adding a New Server.js File</h2>
+    <p>Start by adding a new <code>server.js</code> file to the server folder.</p>
+
+    <h2>2. First Import Express and Cors</h2>
+    <p>Constants <code>express</code> and <code>cors</code> are required to be used together.</p>
+    <p>Here, we're importing the <code>express</code> and <code>cors</code> modules using the built-in Node.js function <code>require()</code>, which allows you to include other modules in your application.</p>
+
+    <pre><code>const express = require('express');
+const cors = require('cors');</code></pre>
+
+    <h2>3. Produce an Express Program</h2>
+    <p>Here, we create an Express application using <code>express()</code>:</p>
+
+    <pre><code>const app = express();</code></pre>
+
+    <h2>4. Use Express Middleware</h2>
+    <p>We use <code>cors()</code> and <code>express.json()</code> as middleware for our Express application:</p>
+
+    <pre><code>app.use(cors());
+app.use(express.json());</code></pre>
+</div>
+
+<diV>
+    <p>At this stage, the dev and start scripts have been added to the package.json file, and all of the dependencies have been installed. Let's start the server creation process right away.</p>
+
+    <h2>1. Adding a New Server.js File</h2>
+    <p>Start by adding a new <code>server.js</code> file to the server folder.</p>
+
+    <h2>2. First Import Express and Cors</h2>
+    <p>Constants <code>express</code> and <code>cors</code> are required to be used together.</p>
+    <p>Here, we're importing the <code>express</code> and <code>cors</code> modules using the built-in Node.js function <code>require()</code>, which allows you to include other modules in your application.</p>
+
+    <pre><code>const express = require('express');
+const cors = require('cors');</code></pre>
+
+    <h2>3. Produce an Express Program</h2>
+    <p>Here, we create an Express application using <code>express()</code>:</p>
+
+    <pre><code>const app = express();</code></pre>
+
+    <h2>4. Use Express Middleware</h2>
+    <p>We use <code>cors()</code> and <code>express.json()</code> as middleware for our Express application:</p>
+
+    <pre><code>app.use(cors());
+app.use(express.json({ message: "Hello from server!" }));</code></pre>
+</diV>
+<div>
+
+    <p>Now, we'll build a JSON endpoint with the message "Hello from server!" that returns messages. To construct a GET route, we are using <code>app.get()</code>. It requires two arguments:</p>
+
+    <ol>
+        <li>The endpoint's path, which in this case is simply <code>/message</code>.</li>
+        <li>The callback, which may be a single middleware function or an assortment/series of several.</li>
+    </ol>
+
+    <p>We are using <code>res.json()</code> to send a JSON response because we are returning a JSON object.</p>
+
+    <p><code>GET</code> is one of the HTTP methods. More information on HTTP methods can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+    <p>Start the server application:</p>
+
+    <pre><code>app.listen(8000, () => {
+    console.log("Server is operating on port 8000.");
+});</code></pre>
+</div>
+
+<div>
+
+    <p>We will use <code>app.listen()</code>, which accepts two arguments, to launch the server.</p>
+
+    <ol>
+        <li>The port that the server will run on. It is 8000 in our situation.</li>
+        <li>When the server starts, a callback function is invoked, and in our example, it just logs the server's running message.</li>
+    </ol>
+
+    <p>This is how the finished <code>server.js</code> file will appear:</p>
+
+    <pre><code>
+const express = require("express");
+const cors = require("cors");
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.get("/message", (req, res) => {
+  res.json({ message: "Hello from server!" });
+});
+
+app.listen(8000, () => {
+  console.log("Server is running on port 8000.");
+});
+    </code></pre>
+</div>
+
+<p>Open a terminal and enter the following command to launch the backend server:</p>
+
+<pre><code>npm run dev</code></pre>
+
+<p><b>Bash</b>, abbreviated as bash.</p>
+
+<p>The server will launch with this command on either port 8000 or 3000.</p>
+
+<img src="https://flaviocopes.com/images/npm-run-dev-long-running-program/Screen_Shot_2022-04-12_at_09.16.47.png" alt="Server Running in Terminal" />
+
+<p>Launch the server on port 3000 or 8000.</p>
+
+<p>Replace the existing code by opening the <code>App.js</code> file in the <code>src</code> folder and adding the following:</p>
+
+<pre><code>
+import React, { useState, useEffect } from "react";
+import "./App.css";
+
+function App() {
+const [message, setMessage] = useState("");
+
+useEffect(() => {
+fetch("http://localhost:8000/message")
+  .then((res) => res.json())
+  .then((data) => setMessage(data.message));
+}, []);
+
+return (
+&lt;div className="App"&gt;
+  &lt;h1&gt;{message}&lt;/h1&gt;
+&lt;/div&gt;
+);
+}
+
+export default App
+</code></pre>
+
+<p>Let's examine the code.</p>
+
+<ul>
+    <li>First, we are importing the React module's <code>useState</code> and <code>useEffect</code>.</li>
+    <li>In order to call the API when the component mounts, we use <code>useEffect</code> to generate a state variable <code>message</code>.</li>
+    <li><code>fetch()</code> is used to make an API request inside the <code>useEffect</code> hook, and the response is set to the <code>message</code> state variable.</li>
+    <li>To ensure that the <code>useEffect</code> hook is only invoked once when the component mounts, notice that we gave an empty array as the second argument to the <code>useEffect</code> hook (i.e., the deps parameter).</li>
+    <li>The <code>message</code> state variable is now being rendered in the <code>h1</code> tag.</li>
+</ul>
+
+<p>Launch your browser and navigate to <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">http://localhost:3000/</a> to see the message “Hello from server!” on the screen.</p>
+
+<h1>Conclusion</h1>
+
+<p>This article showed us how to link React to Node.js on the backend. We built a straightforward React application and linked it to a Node.js backend. Express.js served as our backend framework.</p>
+
+
+    
+    
+    
+    
+  
+
+    <p><i>If you'd like to get in touch or discuss potential collaboration opportunities, feel free to drop me an email at <a href="mailto:wilsonmuita41@gmail.com">wilsonmuita41@gmail.com</a>. I'm also active on <a href="https://www.linkedin.com/in/wilson-muita-34261021a/" target="_blank">LinkedIn</a> and <a href="https://www.facebook.com/muita.alex" target="_blank">Facebook</a>, where I share web development insights and updates.</i></p>
+
+    <p><i>Thank you for visiting my blog, and I hope you find it informative and inspiring. Let's connect and embark on this exciting journey together!</i></p>
+
+
+    
+     <!-- Ionicon link -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</boby>
+
+
+
+   
+
+</html>
+
+
+ 
+
