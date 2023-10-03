@@ -7,7 +7,7 @@
     <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
 
     <!-- Google Font link -->
-    <!-- Google Adsence code -->
+    <!-- Google Adsense code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4047817727348673"
      crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -155,6 +155,48 @@
         @media (max-width: 768px) {
             p {
                 font-size: 16px;
+            }
+        }
+        /* styles */
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        label,
+        input,
+        textarea,
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"],
+        label[for="save-info"] {
+            display: inline;
+            width: auto;
+            margin-bottom: 0;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+                padding: 10px;
             }
         }
     </style>

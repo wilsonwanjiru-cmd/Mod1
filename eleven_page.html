@@ -7,7 +7,7 @@
     <title>DevBlog - Wilson Wanjiru's Personal Blog</title>
 
     <!-- Google Font link -->
-    <!-- Google Adsence code -->
+    <!-- Google Adsense code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4047817727348673"
      crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -183,6 +183,52 @@
                 font-size: 16px;
             }
         }
+        /* styles */
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        label,
+        input,
+        textarea,
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"],
+        label[for="save-info"] {
+            display: inline;
+            width: auto;
+            margin-bottom: 0;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+          
+       
+        
+
        
           
     </style>
@@ -247,6 +293,74 @@
     <p><i>If you'd like to get in touch or discuss potential collaboration opportunities, feel free to drop me an email at <a href="mailto:wilsonmuita41@gmail.com">wilsonmuita41@gmail.com</a>. I'm also active on <a href="https://www.linkedin.com/in/wilson-muita-34261021a/" target="_blank">LinkedIn</a> and <a href="https://www.facebook.com/muita.alex" target="_blank">Facebook</a>, where I share web development insights and updates.</i></p>
 
     <p><i>Thank you for visiting my blog, and I hope you find it informative and inspiring. Let's connect and embark on this exciting journey together!</i></p>
+    <!-- footer -->
+    <footer>
+        <h2>Leave a Reply</h2>
+        <p>Your email address will not be published. Required fields are marked with *</p>
+        
+        <form>
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website">
+    
+            <input type="checkbox" id="save-info" name="save-info">
+            <label for="save-info">Save my name, email, and website in this browser for the next time I comment.</label>
+    
+            <label for="comment">Comment*</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+            <button type="submit">Post Comment</button>
+        </form>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            
+            commentForm.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent the form from submitting normally
+                
+                // Collect form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const website = document.getElementById('website').value;
+                const saveInfo = document.getElementById('save-info').checked;
+                const comment = document.getElementById('comment-text').value;
+                
+                // Create an object to represent the comment
+                const newComment = {
+                    name,
+                    email,
+                    website,
+                    saveInfo,
+                    comment
+                };
+                
+                // Simulate storing the comment in the "database" (db.json)
+                fetch('/store-comment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(newComment)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle the response from the server if needed
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    </script>
+
+
     
 
 
